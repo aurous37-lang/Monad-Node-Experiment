@@ -10,7 +10,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 4 0 obj
-<< /Length 3204 >>
+<< /Length 3184 >>
 stream
 BT
 /F1 9 Tf
@@ -123,11 +123,11 @@ BT
 0 -12 Td
 (----------------------------------) Tj
 0 -12 Td
-(Recent sanitized events from the last four hours:) Tj
+(Event classification legend:) Tj
 0 -12 Td
-(- May 09 07:31:11 [redacted-host] monad[643608]: 2026-05-09 13:31:11.918189117 [643628] ) Tj
+(- Node-impacting: likely affected node availability, execution, RPC, or service stability.) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(- Report collection issue: the report probe failed, but this does not by itself indicate node ) Tj
 ET
 endstream
 endobj
@@ -135,124 +135,124 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 5000 >>
+<< /Length 5381 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(failure.) Tj
 0 -12 Td
-(- May 09 07:31:11 [redacted-host] monad[643608]: 2026-05-09 13:31:11.918633789 [643628] ) Tj
+(- Expected pruned-node limitation: expected limitation from recent-state/pruned operation or ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(older state requests.) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(- Client/WebSocket noise: usually client disconnects, reconnects, or local bot/WebSocket ) Tj
 0 -12 Td
-(- May 09 07:31:11 [redacted-host] monad[643608]: 2026-05-09 13:31:11.919029451 [643628] ) Tj
+(pressure.) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(- Historical resolved issue: older issue already addressed by later configuration/security ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(changes.) Tj
 0 -12 Td
-(- May 09 07:38:11 [redacted-host] monad[643608]: 2026-05-09 13:38:11.953644021 [643628] ) Tj
+(- Informational warning: worth watching, but current evidence does not show node failure.) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+() Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(Classified recent sanitized events from the last four hours:) Tj
 0 -12 Td
-(- May 09 07:38:11 [redacted-host] monad[643608]: 2026-05-09 13:38:11.953692321 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:31:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:31:11.918189117 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:38:11 [redacted-host] monad[643608]: 2026-05-09 13:38:11.953753363 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:31:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:31:11.918633789 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:38:11 [redacted-host] monad[643608]: 2026-05-09 13:38:11.953814527 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:31:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:31:11.919029451 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:38:11 [redacted-host] monad[643608]: 2026-05-09 13:38:11.953886059 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:38:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:38:11.953644021 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:45:11 [redacted-host] monad[643608]: 2026-05-09 13:45:11.989350438 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:38:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:38:11.953692321 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:45:11 [redacted-host] monad[643608]: 2026-05-09 13:45:11.989429214 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:38:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:38:11.953753363 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:45:11 [redacted-host] monad[643608]: 2026-05-09 13:45:11.989477453 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:38:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:38:11.953814527 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:45:11 [redacted-host] monad[643608]: 2026-05-09 13:45:11.989510654 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:38:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:38:11.953886059 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:45:11 [redacted-host] monad[643608]: 2026-05-09 13:45:11.989543725 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:45:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:45:11.989350438 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:52:12 [redacted-host] monad[643608]: 2026-05-09 13:52:12.022363521 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:45:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:45:11.989429214 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:52:12 [redacted-host] monad[643608]: 2026-05-09 13:52:12.022477375 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:45:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:45:11.989477453 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:52:12 [redacted-host] monad[643608]: 2026-05-09 13:52:12.022606254 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:45:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:45:11.989510654 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:52:12 [redacted-host] monad[643608]: 2026-05-09 13:52:12.022730533 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:45:11 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:45:11.989543725 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 07:52:12 [redacted-host] monad[643608]: 2026-05-09 13:52:12.022879749 [643628] ) Tj
+(- [Expected pruned-node limitation] May 09 07:52:12 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for block=73181451 ) Tj
+(13:52:12.022363521 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(\(old_target=73181450, target=73280755\)) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(- May 09 03:56:56 [redacted-host] monad-rpc[922191]: ) Tj
+(- [Expected pruned-node limitation] May 09 07:52:12 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-({"timestamp":"2026-05-09T09:56:56.266038Z","level":"WARN","fields":{"message":"ws connection ) Tj
+(13:52:12.022477375 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 0 -12 Td
-(closed ) Tj
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
 0 -12 Td
-(abruptly","hostname":"\\"hermanshideaway.tailae9d32.ts.net:8081\\"","peer_addr":"Some\(\\"...) Tj
+(- [Expected pruned-node limitation] May 09 07:52:12 [redacted-host] monad[643608]: 2026-05-09 ) Tj
 0 -12 Td
-(- May 09 04:03:35 [redacted-host] monad-rpc[922191]: ) Tj
+(13:52:12.022606254 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
 ET
 endstream
 endobj
@@ -260,18 +260,42 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
 endobj
 8 0 obj
-<< /Length 4337 >>
+<< /Length 4557 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
+0 -12 Td
+(- [Expected pruned-node limitation] May 09 07:52:12 [redacted-host] monad[643608]: 2026-05-09 ) Tj
+0 -12 Td
+(13:52:12.022730533 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
+0 -12 Td
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
+0 -12 Td
+(- [Expected pruned-node limitation] May 09 07:52:12 [redacted-host] monad[643608]: 2026-05-09 ) Tj
+0 -12 Td
+(13:52:12.022879749 [643628] statesync_server.cpp:165 LOG_INFO        Request failed: deletion ) Tj
+0 -12 Td
+(not found for block=73181451 \(old_target=73181450, target=73280755\)) Tj
+0 -12 Td
+(- [Informational warning] May 09 03:56:56 [redacted-host] monad-rpc[922191]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-09T09:56:56.266038Z","level":"WARN","fields":{"message":"ws connection ) Tj
+0 -12 Td
+(closed ) Tj
+0 -12 Td
+(abruptly","hostname":"\\"hermanshideaway.tailae9d32.ts.net:8081\\"","peer_addr":"Some\(\\"...) Tj
+0 -12 Td
+(- [Informational warning] May 09 04:03:35 [redacted-host] monad-rpc[922191]: ) Tj
+0 -12 Td
 ({"timestamp":"2026-05-09T10:03:35.578283Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
 (closed ) Tj
 0 -12 Td
 (abruptly","hostname":"\\"hermanshideaway.tailae9d32.ts.net:8081\\"","peer_addr":"Some\(\\"...) Tj
 0 -12 Td
-(- May 09 07:31:40 [redacted-host] monad-rpc[922191]: ) Tj
+(- [Informational warning] May 09 07:31:40 [redacted-host] monad-rpc[922191]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-09T13:31:40.499545Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -279,7 +303,7 @@ BT
 0 -12 Td
 (abruptly","hostname":"\\"hermanshideaway.tailae9d32.ts.net:8081\\"","peer_addr":"Some\(\\"...) Tj
 0 -12 Td
-(- May 09 07:34:41 [redacted-host] monad-rpc[922191]: ) Tj
+(- [Informational warning] May 09 07:34:41 [redacted-host] monad-rpc[922191]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-09T13:34:41.046113Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -287,7 +311,7 @@ BT
 0 -12 Td
 (abruptly","hostname":"\\"hermanshideaway.tailae9d32.ts.net:8081\\"","peer_addr":"Some\(\\"...) Tj
 0 -12 Td
-(- May 09 07:37:52 [redacted-host] monad-rpc[922191]: ) Tj
+(- [Informational warning] May 09 07:37:52 [redacted-host] monad-rpc[922191]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-09T13:37:52.936030Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -295,7 +319,7 @@ BT
 0 -12 Td
 (abruptly","hostname":"\\"hermanshideaway.tailae9d32.ts.net:8081\\"","peer_addr":"Some\(\\"...) Tj
 0 -12 Td
-(- May 09 07:40:09 [redacted-host] monad-rpc[922191]: ) Tj
+(- [Informational warning] May 09 07:40:09 [redacted-host] monad-rpc[922191]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-09T13:40:09.565215Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -354,7 +378,18 @@ BT
 (- 2026-05-07: Documented the remaining upstream security limitation for Monad BFT keystore ) Tj
 0 -12 Td
 (unlock handling.) Tj
-0 -12 Td
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 1707 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
 (  Why: A cleaner design would let operators pass the keystore unlock value through a protected ) Tj
 0 -12 Td
 (file, stdin, systemd credential, or similar non-argv mechanism. The current local binary help ) Tj
@@ -378,18 +413,7 @@ BT
 (like hex strings, token-like values, and sensitive argument values.) Tj
 0 -12 Td
 () Tj
-ET
-endstream
-endobj
-9 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
-endobj
-10 0 obj
-<< /Length 721 >>
-stream
-BT
-/F1 9 Tf
-54 738 Td
+0 -12 Td
 (Research Notes) Tj
 0 -12 Td
 (--------------) Tj
@@ -756,18 +780,18 @@ xref
 0000000064 00000 n 
 0000000147 00000 n 
 0000000215 00000 n 
-0000003471 00000 n 
-0000003597 00000 n 
-0000008649 00000 n 
-0000008775 00000 n 
-0000013164 00000 n 
-0000013290 00000 n 
-0000014063 00000 n 
-0000014191 00000 n 
-0000125551 00000 n 
-0000125711 00000 n 
+0000003451 00000 n 
+0000003577 00000 n 
+0000009010 00000 n 
+0000009136 00000 n 
+0000013745 00000 n 
+0000013871 00000 n 
+0000015631 00000 n 
+0000015759 00000 n 
+0000127119 00000 n 
+0000127279 00000 n 
 trailer
 << /Size 15 /Root 1 0 R >>
 startxref
-125866
+127434
 %%EOF

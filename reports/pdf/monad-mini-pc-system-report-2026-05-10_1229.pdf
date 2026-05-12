@@ -10,7 +10,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 4 0 obj
-<< /Length 3165 >>
+<< /Length 3146 >>
 stream
 BT
 /F1 9 Tf
@@ -125,9 +125,9 @@ BT
 0 -12 Td
 (----------------------------------) Tj
 0 -12 Td
-(Recent sanitized events from the last four hours:) Tj
+(Event classification legend:) Tj
 0 -12 Td
-(- May 10 12:00:40 [redacted-host] monad[643608]: 2026-05-10 18:00:40.950381568 [643628] ) Tj
+(- Node-impacting: likely affected node availability, execution, RPC, or service stability.) Tj
 ET
 endstream
 endobj
@@ -135,78 +135,106 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 4540 >>
+<< /Length 4742 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
-(statesync_server_network.hpp:158 LOG_WARNING        socket error event, reconnecting) Tj
+(- Report collection issue: the report probe failed, but this does not by itself indicate node ) Tj
 0 -12 Td
-(- May 10 12:02:42 [redacted-host] monad[643608]: 2026-05-10 18:02:42.950224078 [643628] ) Tj
+(failure.) Tj
 0 -12 Td
-(statesync_server_network.hpp:158 LOG_WARNING        socket error event, reconnecting) Tj
+(- Expected pruned-node limitation: expected limitation from recent-state/pruned operation or ) Tj
 0 -12 Td
-(- May 10 12:02:59 [redacted-host] monad[643608]: 2026-05-10 18:02:59.317867317 [643628] ) Tj
+(older state requests.) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(- Client/WebSocket noise: usually client disconnects, reconnects, or local bot/WebSocket ) Tj
 0 -12 Td
-(target=71508510) Tj
+(pressure.) Tj
 0 -12 Td
-(- May 10 12:02:59 [redacted-host] monad[643608]: 2026-05-10 18:02:59.387084154 [643628] ) Tj
+(- Historical resolved issue: older issue already addressed by later configuration/security ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(changes.) Tj
 0 -12 Td
-(target=71508510) Tj
+(- Informational warning: worth watching, but current evidence does not show node failure.) Tj
 0 -12 Td
-(- May 10 12:02:59 [redacted-host] monad[643608]: 2026-05-10 18:02:59.387225653 [643628] ) Tj
+() Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(Classified recent sanitized events from the last four hours:) Tj
 0 -12 Td
-(target=71508510) Tj
+(- [Informational warning] May 10 12:00:40 [redacted-host] monad[643608]: 2026-05-10 ) Tj
 0 -12 Td
-(- May 10 12:02:59 [redacted-host] monad[643608]: 2026-05-10 18:02:59.387379578 [643628] ) Tj
+(18:00:40.950381568 [643628] statesync_server_network.hpp:158 LOG_WARNING        socket error ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(event, reconnecting) Tj
 0 -12 Td
-(target=71508510) Tj
+(- [Informational warning] May 10 12:02:42 [redacted-host] monad[643608]: 2026-05-10 ) Tj
 0 -12 Td
-(- May 10 12:03:00 [redacted-host] monad[643608]: 2026-05-10 18:03:00.070699503 [643628] ) Tj
+(18:02:42.950224078 [643628] statesync_server_network.hpp:158 LOG_WARNING        socket error ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(event, reconnecting) Tj
 0 -12 Td
-(target=71508510) Tj
+(- [Expected pruned-node limitation] May 10 12:02:59 [redacted-host] monad[643608]: 2026-05-10 ) Tj
 0 -12 Td
-(- May 10 12:22:49 [redacted-host] monad[643608]: 2026-05-10 18:22:49.381705383 [643628] ) Tj
+(18:02:59.317867317 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(target=71508510) Tj
+(- [Expected pruned-node limitation] May 10 12:02:59 [redacted-host] monad[643608]: 2026-05-10 ) Tj
 0 -12 Td
-(- May 10 12:22:49 [redacted-host] monad[643608]: 2026-05-10 18:22:49.508670893 [643628] ) Tj
+(18:02:59.387084154 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(target=71508510) Tj
+(- [Expected pruned-node limitation] May 10 12:02:59 [redacted-host] monad[643608]: 2026-05-10 ) Tj
 0 -12 Td
-(- May 10 12:22:49 [redacted-host] monad[643608]: 2026-05-10 18:22:49.509082414 [643628] ) Tj
+(18:02:59.387225653 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(target=71508510) Tj
+(- [Expected pruned-node limitation] May 10 12:02:59 [redacted-host] monad[643608]: 2026-05-10 ) Tj
 0 -12 Td
-(- May 10 12:22:49 [redacted-host] monad[643608]: 2026-05-10 18:22:49.509505386 [643628] ) Tj
+(18:02:59.387379578 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(target=71508510) Tj
+(- [Expected pruned-node limitation] May 10 12:03:00 [redacted-host] monad[643608]: 2026-05-10 ) Tj
 0 -12 Td
-(- May 10 12:22:50 [redacted-host] monad[643608]: 2026-05-10 18:22:50.173356543 [643628] ) Tj
+(18:03:00.070699503 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(target=71508510) Tj
+(- [Expected pruned-node limitation] May 10 12:22:49 [redacted-host] monad[643608]: 2026-05-10 ) Tj
 0 -12 Td
-(- May 10 08:46:57 [redacted-host] monad-rpc[922191]: ) Tj
+(18:22:49.381705383 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
+0 -12 Td
+(root not found for target=71508510) Tj
+0 -12 Td
+(- [Expected pruned-node limitation] May 10 12:22:49 [redacted-host] monad[643608]: 2026-05-10 ) Tj
+0 -12 Td
+(18:22:49.508670893 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
+0 -12 Td
+(root not found for target=71508510) Tj
+0 -12 Td
+(- [Expected pruned-node limitation] May 10 12:22:49 [redacted-host] monad[643608]: 2026-05-10 ) Tj
+0 -12 Td
+(18:22:49.509082414 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
+0 -12 Td
+(root not found for target=71508510) Tj
+0 -12 Td
+(- [Expected pruned-node limitation] May 10 12:22:49 [redacted-host] monad[643608]: 2026-05-10 ) Tj
+0 -12 Td
+(18:22:49.509505386 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
+0 -12 Td
+(root not found for target=71508510) Tj
+0 -12 Td
+(- [Expected pruned-node limitation] May 10 12:22:50 [redacted-host] monad[643608]: 2026-05-10 ) Tj
+0 -12 Td
+(18:22:50.173356543 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
+0 -12 Td
+(root not found for target=71508510) Tj
+0 -12 Td
+(- [Informational warning] May 10 08:46:57 [redacted-host] monad-rpc[922191]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-10T14:46:57.660885Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -214,7 +242,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"targe...) Tj
 0 -12 Td
-(- May 10 11:55:57 [redacted-host] monad-rpc[922191]: ) Tj
+(- [Informational warning] May 10 11:55:57 [redacted-host] monad-rpc[922191]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-10T17:55:57.765422Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -222,37 +250,9 @@ BT
 0 -12 Td
 (ip]\\"\)"},"targe...) Tj
 0 -12 Td
-(- May 10 12:00:40 [redacted-host] monad-rpc[922191]: ) Tj
+(- [Historical resolved issue] May 10 12:00:40 [redacted-host] monad-rpc[922191]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-10T18:00:40.950418Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
-0 -12 Td
-(txpool ipc client died, trying to reconnect"},"target":"monad_rpc::txpool"}) Tj
-0 -12 Td
-(- May 10 12:00:40 [redacted-host] monad-rpc[922191]: ) Tj
-0 -12 Td
-({"timestamp":"2026-05-10T18:00:40.951392Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
-0 -12 Td
-(txpool ipc client failed to reconnect, falling back to SocketWatcher","err":"Os { code: 111, ) Tj
-0 -12 Td
-(...) Tj
-0 -12 Td
-(- May 10 12:00:42 [redacted-host] monad-rpc[922191]: {"timestamp":"2026-05-) Tj
-0 -12 Td
-(10T18:00:42.293901Z","level":"ERROR","fields":{"message":"","name":"MeterProvider.Drop.Shutdown) Tj
-0 -12 Td
-(Failed","message":"Shutdown attempt failed during drop of MeterProvid...) Tj
-0 -12 Td
-(- May 10 12:00:42 [redacted-host] systemd[1]: Stopped monad-rpc.service - "Service file for ) Tj
-0 -12 Td
-(Monad RPC".) Tj
-0 -12 Td
-(- May 10 12:00:42 [redacted-host] systemd[1]: Started monad-rpc.service - "Service file for ) Tj
-0 -12 Td
-(Monad RPC".) Tj
-0 -12 Td
-(- May 10 12:02:42 [redacted-host] monad-rpc[1983037]: ) Tj
-0 -12 Td
-({"timestamp":"2026-05-10T18:02:42.950128Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
 ET
 endstream
 endobj
@@ -260,28 +260,58 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
 endobj
 8 0 obj
-<< /Length 4502 >>
+<< /Length 4647 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
 (txpool ipc client died, trying to reconnect"},"target":"monad_rpc::txpool"}) Tj
 0 -12 Td
-(- May 10 12:02:42 [redacted-host] monad-rpc[1983037]: ) Tj
+(- [Historical resolved issue] May 10 12:00:40 [redacted-host] monad-rpc[922191]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-10T18:00:40.951392Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
+0 -12 Td
+(txpool ipc client failed to reconnect, falling back to SocketWatcher","err":"Os { code: 111, ) Tj
+0 -12 Td
+(...) Tj
+0 -12 Td
+(- [Informational warning] May 10 12:00:42 [redacted-host] monad-rpc[922191]: {"timestamp":"2026) Tj
+0 -12 Td
+(-05-) Tj
+0 -12 Td
+(10T18:00:42.293901Z","level":"ERROR","fields":{"message":"","name":"MeterProvider.Drop.Shutdown) Tj
+0 -12 Td
+(Failed","message":"Shutdown attempt failed during drop of MeterProvid...) Tj
+0 -12 Td
+(- [Informational] May 10 12:00:42 [redacted-host] systemd[1]: Stopped monad-rpc.service - ) Tj
+0 -12 Td
+("Service file for Monad RPC".) Tj
+0 -12 Td
+(- [Informational] May 10 12:00:42 [redacted-host] systemd[1]: Started monad-rpc.service - ) Tj
+0 -12 Td
+("Service file for Monad RPC".) Tj
+0 -12 Td
+(- [Historical resolved issue] May 10 12:02:42 [redacted-host] monad-rpc[1983037]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-10T18:02:42.950128Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
+0 -12 Td
+(txpool ipc client died, trying to reconnect"},"target":"monad_rpc::txpool"}) Tj
+0 -12 Td
+(- [Historical resolved issue] May 10 12:02:42 [redacted-host] monad-rpc[1983037]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-10T18:02:42.950255Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
 0 -12 Td
 (txpool ipc client failed to reconnect, falling back to SocketWatcher","err":"Os { code: 104,...) Tj
 0 -12 Td
-(- May 10 12:02:44 [redacted-host] systemd[1]: Stopped monad-rpc.service - "Service file for ) Tj
+(- [Informational] May 10 12:02:44 [redacted-host] systemd[1]: Stopped monad-rpc.service - ) Tj
 0 -12 Td
-(Monad RPC".) Tj
+("Service file for Monad RPC".) Tj
 0 -12 Td
-(- May 10 12:02:44 [redacted-host] systemd[1]: Started monad-rpc.service - "Service file for ) Tj
+(- [Informational] May 10 12:02:44 [redacted-host] systemd[1]: Started monad-rpc.service - ) Tj
 0 -12 Td
-(Monad RPC".) Tj
+("Service file for Monad RPC".) Tj
 0 -12 Td
-(- May 10 12:03:17 [redacted-host] monad-rpc[1984726]: ) Tj
+(- [Informational warning] May 10 12:03:17 [redacted-host] monad-rpc[1984726]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-10T18:03:17.693291Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -348,7 +378,18 @@ BT
 (  Privacy note: This notes the design limitation only; no secret [redacted] is recorded.) Tj
 0 -12 Td
 (- 2026-05-07: Kept public report generation sanitized and avoided raw systemctl status or full ) Tj
-0 -12 Td
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 1880 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
 (process command-line capture.) Tj
 0 -12 Td
 (  Why: Full status and process listings can expose sensitive command-line arguments. Reports ) Tj
@@ -378,18 +419,7 @@ BT
 () Tj
 0 -12 Td
 (Research Notes) Tj
-ET
-endstream
-endobj
-9 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
-endobj
-10 0 obj
-<< /Length 692 >>
-stream
-BT
-/F1 9 Tf
-54 738 Td
+0 -12 Td
 (--------------) Tj
 0 -12 Td
 (- This report is generated from local system telemetry and Monad service logs on the mini PC.) Tj
@@ -772,18 +802,18 @@ xref
 0000000064 00000 n 
 0000000147 00000 n 
 0000000215 00000 n 
-0000003432 00000 n 
-0000003558 00000 n 
-0000008150 00000 n 
-0000008276 00000 n 
-0000012830 00000 n 
-0000012956 00000 n 
-0000013700 00000 n 
-0000013828 00000 n 
-0000101152 00000 n 
-0000101312 00000 n 
+0000003413 00000 n 
+0000003539 00000 n 
+0000008333 00000 n 
+0000008459 00000 n 
+0000013158 00000 n 
+0000013284 00000 n 
+0000015217 00000 n 
+0000015345 00000 n 
+0000102669 00000 n 
+0000102829 00000 n 
 trailer
 << /Size 15 /Root 1 0 R >>
 startxref
-101467
+102984
 %%EOF

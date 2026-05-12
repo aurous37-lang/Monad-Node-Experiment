@@ -10,7 +10,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 4 0 obj
-<< /Length 3116 >>
+<< /Length 3091 >>
 stream
 BT
 /F1 9 Tf
@@ -125,9 +125,9 @@ BT
 0 -12 Td
 (----------------------------------) Tj
 0 -12 Td
-(Recent sanitized events from the last four hours:) Tj
+(Event classification legend:) Tj
 0 -12 Td
-(- May 07 06:38:51 [redacted-host] \(onad-rpc\)[5959]: monad-rpc.service: Failed to set up CPU ) Tj
+(- Node-impacting: likely affected node availability, execution, RPC, or service stability.) Tj
 ET
 endstream
 endobj
@@ -135,90 +135,114 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 3916 >>
+<< /Length 4376 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
-(affinity: Invalid argument) Tj
+(- Report collection issue: the report probe failed, but this does not by itself indicate node ) Tj
 0 -12 Td
-(- May 07 06:38:51 [redacted-host] systemd[1]: monad-rpc.service: Failed with result 'exit-) Tj
+(failure.) Tj
 0 -12 Td
-(code'.) Tj
+(- Expected pruned-node limitation: expected limitation from recent-state/pruned operation or ) Tj
 0 -12 Td
-(- May 07 06:39:01 [redacted-host] systemd[1]: monad-rpc.service: Scheduled restart job, restart) Tj
+(older state requests.) Tj
 0 -12 Td
-( counter is at 23.) Tj
+(- Client/WebSocket noise: usually client disconnects, reconnects, or local bot/WebSocket ) Tj
 0 -12 Td
-(- May 07 06:39:01 [redacted-host] systemd[1]: Started monad-rpc.service - "Service file for ) Tj
+(pressure.) Tj
 0 -12 Td
-(Monad RPC".) Tj
+(- Historical resolved issue: older issue already addressed by later configuration/security ) Tj
 0 -12 Td
-(- May 07 06:39:01 [redacted-host] \(onad-rpc\)[5964]: monad-rpc.service: Failed to set up CPU ) Tj
+(changes.) Tj
 0 -12 Td
-(affinity: Invalid argument) Tj
+(- Informational warning: worth watching, but current evidence does not show node failure.) Tj
 0 -12 Td
-(- May 07 06:39:01 [redacted-host] systemd[1]: monad-rpc.service: Failed with result 'exit-) Tj
+() Tj
 0 -12 Td
-(code'.) Tj
+(Classified recent sanitized events from the last four hours:) Tj
 0 -12 Td
-(- May 07 06:39:12 [redacted-host] systemd[1]: monad-rpc.service: Scheduled restart job, restart) Tj
+(- [Informational warning] May 07 06:38:51 [redacted-host] \(onad-rpc\)[5959]: monad-rpc.service: ) Tj
 0 -12 Td
-( counter is at 24.) Tj
+(Failed to set up CPU affinity: Invalid argument) Tj
 0 -12 Td
-(- May 07 06:39:12 [redacted-host] systemd[1]: Started monad-rpc.service - "Service file for ) Tj
+(- [Node-impacting] May 07 06:38:51 [redacted-host] systemd[1]: monad-rpc.service: Failed with ) Tj
 0 -12 Td
-(Monad RPC".) Tj
+(result 'exit-code'.) Tj
 0 -12 Td
-(- May 07 06:39:12 [redacted-host] \(onad-rpc\)[5988]: monad-rpc.service: Failed to set up CPU ) Tj
+(- [Informational] May 07 06:39:01 [redacted-host] systemd[1]: monad-rpc.service: Scheduled ) Tj
 0 -12 Td
-(affinity: Invalid argument) Tj
+(restart job, restart counter is at 23.) Tj
 0 -12 Td
-(- May 07 06:39:12 [redacted-host] systemd[1]: monad-rpc.service: Failed with result 'exit-) Tj
+(- [Informational] May 07 06:39:01 [redacted-host] systemd[1]: Started monad-rpc.service - ) Tj
 0 -12 Td
-(code'.) Tj
+("Service file for Monad RPC".) Tj
 0 -12 Td
-(- May 07 06:39:22 [redacted-host] systemd[1]: monad-rpc.service: Scheduled restart job, restart) Tj
+(- [Informational warning] May 07 06:39:01 [redacted-host] \(onad-rpc\)[5964]: monad-rpc.service: ) Tj
 0 -12 Td
-( counter is at 25.) Tj
+(Failed to set up CPU affinity: Invalid argument) Tj
 0 -12 Td
-(- May 07 06:39:22 [redacted-host] systemd[1]: Started monad-rpc.service - "Service file for ) Tj
+(- [Node-impacting] May 07 06:39:01 [redacted-host] systemd[1]: monad-rpc.service: Failed with ) Tj
 0 -12 Td
-(Monad RPC".) Tj
+(result 'exit-code'.) Tj
 0 -12 Td
-(- May 07 06:39:22 [redacted-host] \(onad-rpc\)[6015]: monad-rpc.service: Failed to set up CPU ) Tj
+(- [Informational] May 07 06:39:12 [redacted-host] systemd[1]: monad-rpc.service: Scheduled ) Tj
 0 -12 Td
-(affinity: Invalid argument) Tj
+(restart job, restart counter is at 24.) Tj
 0 -12 Td
-(- May 07 06:39:22 [redacted-host] systemd[1]: monad-rpc.service: Failed with result 'exit-) Tj
+(- [Informational] May 07 06:39:12 [redacted-host] systemd[1]: Started monad-rpc.service - ) Tj
 0 -12 Td
-(code'.) Tj
+("Service file for Monad RPC".) Tj
 0 -12 Td
-(- May 07 06:39:32 [redacted-host] systemd[1]: monad-rpc.service: Scheduled restart job, restart) Tj
+(- [Informational warning] May 07 06:39:12 [redacted-host] \(onad-rpc\)[5988]: monad-rpc.service: ) Tj
 0 -12 Td
-( counter is at 26.) Tj
+(Failed to set up CPU affinity: Invalid argument) Tj
 0 -12 Td
-(- May 07 06:39:32 [redacted-host] systemd[1]: Started monad-rpc.service - "Service file for ) Tj
+(- [Node-impacting] May 07 06:39:12 [redacted-host] systemd[1]: monad-rpc.service: Failed with ) Tj
 0 -12 Td
-(Monad RPC".) Tj
+(result 'exit-code'.) Tj
 0 -12 Td
-(- May 07 06:39:32 [redacted-host] \(onad-rpc\)[6059]: monad-rpc.service: Failed to set up CPU ) Tj
+(- [Informational] May 07 06:39:22 [redacted-host] systemd[1]: monad-rpc.service: Scheduled ) Tj
 0 -12 Td
-(affinity: Invalid argument) Tj
+(restart job, restart counter is at 25.) Tj
 0 -12 Td
-(- May 07 06:39:32 [redacted-host] systemd[1]: monad-rpc.service: Failed with result 'exit-) Tj
+(- [Informational] May 07 06:39:22 [redacted-host] systemd[1]: Started monad-rpc.service - ) Tj
 0 -12 Td
-(code'.) Tj
+("Service file for Monad RPC".) Tj
 0 -12 Td
-(- May 07 06:39:42 [redacted-host] systemd[1]: Stopped monad-rpc.service - "Service file for ) Tj
+(- [Informational warning] May 07 06:39:22 [redacted-host] \(onad-rpc\)[6015]: monad-rpc.service: ) Tj
 0 -12 Td
-(Monad RPC".) Tj
+(Failed to set up CPU affinity: Invalid argument) Tj
 0 -12 Td
-(- May 07 06:39:42 [redacted-host] systemd[1]: Started monad-rpc.service - "Service file for ) Tj
+(- [Node-impacting] May 07 06:39:22 [redacted-host] systemd[1]: monad-rpc.service: Failed with ) Tj
 0 -12 Td
-(Monad RPC".) Tj
+(result 'exit-code'.) Tj
 0 -12 Td
-(- May 07 06:43:05 [redacted-host] monad-rpc[6244]: ) Tj
+(- [Informational] May 07 06:39:32 [redacted-host] systemd[1]: monad-rpc.service: Scheduled ) Tj
+0 -12 Td
+(restart job, restart counter is at 26.) Tj
+0 -12 Td
+(- [Informational] May 07 06:39:32 [redacted-host] systemd[1]: Started monad-rpc.service - ) Tj
+0 -12 Td
+("Service file for Monad RPC".) Tj
+0 -12 Td
+(- [Informational warning] May 07 06:39:32 [redacted-host] \(onad-rpc\)[6059]: monad-rpc.service: ) Tj
+0 -12 Td
+(Failed to set up CPU affinity: Invalid argument) Tj
+0 -12 Td
+(- [Node-impacting] May 07 06:39:32 [redacted-host] systemd[1]: monad-rpc.service: Failed with ) Tj
+0 -12 Td
+(result 'exit-code'.) Tj
+0 -12 Td
+(- [Informational] May 07 06:39:42 [redacted-host] systemd[1]: Stopped monad-rpc.service - ) Tj
+0 -12 Td
+("Service file for Monad RPC".) Tj
+0 -12 Td
+(- [Informational] May 07 06:39:42 [redacted-host] systemd[1]: Started monad-rpc.service - ) Tj
+0 -12 Td
+("Service file for Monad RPC".) Tj
+0 -12 Td
+(- [Informational warning] May 07 06:43:05 [redacted-host] monad-rpc[6244]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T12:43:05.621447Z","level":"ERROR","fields":{"message":"Error ) Tj
 0 -12 Td
@@ -226,15 +250,26 @@ BT
 0 -12 Td
 (txs","block_key":"Proposed\(ProposedBlockKey\(73026280, 32f4...) Tj
 0 -12 Td
-(- May 07 06:43:05 [redacted-host] monad-rpc[6244]: ) Tj
+(- [Informational warning] May 07 06:43:05 [redacted-host] monad-rpc[6244]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T12:43:05.621487Z","level":"ERROR","fields":{"message":"Error ) Tj
-0 -12 Td
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 1623 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
 (traversing db while populating triedb cache ) Tj
 0 -12 Td
 (receipts","block_key":"Proposed\(ProposedBlockKey\(73026280,...) Tj
 0 -12 Td
-(- May 07 06:43:05 [redacted-host] monad-rpc[6244]: ) Tj
+(- [Informational warning] May 07 06:43:05 [redacted-host] monad-rpc[6244]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T12:43:05.621450Z","level":"ERROR","fields":{"message":"Error ) Tj
 0 -12 Td
@@ -242,7 +277,7 @@ BT
 0 -12 Td
 (txs","block_key":"Proposed\(ProposedBlockKey\(73026280, 32f4...) Tj
 0 -12 Td
-(- May 07 06:43:05 [redacted-host] monad-rpc[6244]: ) Tj
+(- [Informational warning] May 07 06:43:05 [redacted-host] monad-rpc[6244]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T12:43:05.621498Z","level":"ERROR","fields":{"message":"Error ) Tj
 0 -12 Td
@@ -253,33 +288,26 @@ BT
 () Tj
 0 -12 Td
 (Research Notes) Tj
-ET
-endstream
-endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
-endobj
-8 0 obj
-<< /Length 692 >>
-stream
-BT
-/F1 9 Tf
-54 738 Td
+0 -12 Td
 (--------------) Tj
 0 -12 Td
-(- This report is generated from local system telemetry and Monad service logs on the mini PC.) Tj
+(- [Informational] This report is generated from local system telemetry and Monad service logs ) Tj
 0 -12 Td
-(- Values are snapshots, not lab-grade benchmarks. Trends become more useful after multiple ) Tj
+(on the mini PC.) Tj
 0 -12 Td
-(four-hour samples.) Tj
+(- [Informational] Values are snapshots, not lab-grade benchmarks. Trends become more useful ) Tj
 0 -12 Td
-(- The report intentionally avoids private identity material, validator keys, wallet-like ) Tj
+(after multiple four-hour samples.) Tj
 0 -12 Td
-(values, raw peer lists, public IPs, and command lines containing sensitive arguments.) Tj
+(- [Informational] The report intentionally avoids private identity material, validator keys, ) Tj
 0 -12 Td
-(- Intended use: public community reporting about running a Monad node on smaller hardware while) Tj
+(wallet-like values, raw peer lists, public IPs, and command lines containing sensitive ) Tj
 0 -12 Td
-( retaining useful operational data for technical readers.) Tj
+(arguments.) Tj
+0 -12 Td
+(- [Informational] Intended use: public community reporting about running a Monad node on ) Tj
+0 -12 Td
+(smaller hardware while retaining useful operational data for technical readers.) Tj
 0 -12 Td
 () Tj
 ET
@@ -616,16 +644,16 @@ xref
 0000000064 00000 n 
 0000000140 00000 n 
 0000000208 00000 n 
-0000003376 00000 n 
-0000003502 00000 n 
-0000007470 00000 n 
-0000007596 00000 n 
-0000008339 00000 n 
-0000008465 00000 n 
-0000118901 00000 n 
-0000119061 00000 n 
+0000003351 00000 n 
+0000003477 00000 n 
+0000007905 00000 n 
+0000008031 00000 n 
+0000009706 00000 n 
+0000009832 00000 n 
+0000120268 00000 n 
+0000120428 00000 n 
 trailer
 << /Size 13 /Root 1 0 R >>
 startxref
-119216
+120583
 %%EOF

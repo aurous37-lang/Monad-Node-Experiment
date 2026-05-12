@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [5 0 R 7 0 R 10 0 R] /Count 3 >>
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 12 0 R] /Count 4 >>
 endobj
 3 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 4 0 obj
-<< /Length 3151 >>
+<< /Length 3188 >>
 stream
 BT
 /F1 9 Tf
@@ -123,11 +123,11 @@ BT
 0 -12 Td
 (----------------------------------) Tj
 0 -12 Td
-(Recent sanitized events from the last four hours:) Tj
+(Event classification legend:) Tj
 0 -12 Td
-(- probe failed: Command '['journalctl', '-u', 'monad-bft', '--since', '4 hours ago', '--no-) Tj
+(- Node-impacting: likely affected node availability, execution, RPC, or service stability.) Tj
 0 -12 Td
-(pager']' timed out after 20 seconds) Tj
+(- Report collection issue: the report probe failed, but this does not by itself indicate node ) Tj
 ET
 endstream
 endobj
@@ -135,11 +135,35 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 4243 >>
+<< /Length 4337 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+(failure.) Tj
+0 -12 Td
+(- Expected pruned-node limitation: expected limitation from recent-state/pruned operation or ) Tj
+0 -12 Td
+(older state requests.) Tj
+0 -12 Td
+(- Client/WebSocket noise: usually client disconnects, reconnects, or local bot/WebSocket ) Tj
+0 -12 Td
+(pressure.) Tj
+0 -12 Td
+(- Historical resolved issue: older issue already addressed by later configuration/security ) Tj
+0 -12 Td
+(changes.) Tj
+0 -12 Td
+(- Informational warning: worth watching, but current evidence does not show node failure.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Classified recent sanitized events from the last four hours:) Tj
+0 -12 Td
+(- [Report collection issue] probe failed: Command '['journalctl', '-u', 'monad-bft', '--since',) Tj
+0 -12 Td
+( '4 hours ago', '--no-pager']' timed out after 20 seconds) Tj
+0 -12 Td
 () Tj
 0 -12 Td
 (Security Change Log) Tj
@@ -229,7 +253,18 @@ BT
 (included.) Tj
 0 -12 Td
 () Tj
-0 -12 Td
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 721 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
 (Research Notes) Tj
 0 -12 Td
 (--------------) Tj
@@ -252,10 +287,10 @@ BT
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
 endobj
-8 0 obj
+10 0 obj
 << /Type /XObject /Subtype /Image /Width 980 /Height 1068 /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length 85481 >>
 stream
 ÿØÿà JFIF      ÿÛ C 
@@ -487,7 +522,7 @@ $’,»y3İ—¿Våb5V¡¾õ?ê;¢j4=Æ¢Ë-î
 ›;;?ƒUnqß?(fÓZºß¦:‘õ9eËª±Ót’º²Yèl”m¨¦«jU¹fGT13„ÙåŠNNÒó%ê›l–ÏÕ—T[æ¢¢¢V\çsi¨UV˜ç«šØòˆ»×"&QÊ'1Ùgê¬l6K=¾ªØ´ÔJ÷RºªÏGS-2½ÛNİÍ,N‘™rç±rrb¾¾¶ét©¹\ªæ«¬©‘ÓOQ;Õï•î\¹Îròªªª®@œ                            éªöŒŞŞ£¸éªöŒŞŞ ˜zš/s)ü}Hwšo»šhâáv¶ÎŞ3„ıÇ?².ôôŸÿ "íôD·`Ò}‘w§¤ÿ ùbÒ€ Rx                                                                                                                    ÓUí¼½GqÓUí¼½A0é   , \è                                                                                                                    tÕ{FoïQÜtÕ{FoïPL:@çC  ÿÙ
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Length 108 >>
 stream
 BT
@@ -498,24 +533,26 @@ ET
 q 504.00 0 0 549.26 54.00 153.74 cm /Im1 Do Q
 endstream
 endobj
-10 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> /XObject << /Im1 8 0 R >> >> /Contents 9 0 R >>
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> /XObject << /Im1 10 0 R >> >> /Contents 11 0 R >>
 endobj
 xref
-0 11
+0 13
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000134 00000 n 
-0000000202 00000 n 
-0000003405 00000 n 
-0000003531 00000 n 
-0000007826 00000 n 
-0000007952 00000 n 
-0000093603 00000 n 
-0000093762 00000 n 
+0000000140 00000 n 
+0000000208 00000 n 
+0000003448 00000 n 
+0000003574 00000 n 
+0000007963 00000 n 
+0000008089 00000 n 
+0000008861 00000 n 
+0000008987 00000 n 
+0000094639 00000 n 
+0000094799 00000 n 
 trailer
-<< /Size 11 /Root 1 0 R >>
+<< /Size 13 /Root 1 0 R >>
 startxref
-93915
+94954
 %%EOF

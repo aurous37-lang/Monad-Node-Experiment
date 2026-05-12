@@ -26,6 +26,11 @@ telemetry and Monad service logs. Private identity material, keys, wallet-like
 values, public IPs, peer lists, hostnames, usernames, and sensitive command
 arguments are intentionally excluded or redacted.
 
+Report event sections classify scary-looking log lines so readers can
+distinguish node-impacting issues from report collection timeouts, expected
+pruned-node limitations, WebSocket/client disconnect noise, and historical
+issues that were later resolved.
+
 This is a pruned-node experiment. Historical data older than the node's local
 retention window, roughly 20 days for this setup, should be backfilled from an
 archive source, exchange, indexer, explorer, or another data platform as needed.

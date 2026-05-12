@@ -10,7 +10,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 4 0 obj
-<< /Length 3147 >>
+<< /Length 3184 >>
 stream
 BT
 /F1 9 Tf
@@ -123,11 +123,11 @@ BT
 0 -12 Td
 (----------------------------------) Tj
 0 -12 Td
-(Recent sanitized events from the last four hours:) Tj
+(Event classification legend:) Tj
 0 -12 Td
-(- probe failed: Command '['journalctl', '-u', 'monad-bft', '--since', '4 hours ago', '--no-) Tj
+(- Node-impacting: likely affected node availability, execution, RPC, or service stability.) Tj
 0 -12 Td
-(pager']' timed out after 20 seconds) Tj
+(- Report collection issue: the report probe failed, but this does not by itself indicate node ) Tj
 ET
 endstream
 endobj
@@ -135,16 +135,40 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 4273 >>
+<< /Length 4540 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
-(- probe failed: Command '['journalctl', '-u', 'monad-execution', '--since', '4 hours ago', '--) Tj
+(failure.) Tj
 0 -12 Td
-(no-pager']' timed out after 20 seconds) Tj
+(- Expected pruned-node limitation: expected limitation from recent-state/pruned operation or ) Tj
 0 -12 Td
-(- May 08 12:03:02 [redacted-host] monad-rpc[39489]: ) Tj
+(older state requests.) Tj
+0 -12 Td
+(- Client/WebSocket noise: usually client disconnects, reconnects, or local bot/WebSocket ) Tj
+0 -12 Td
+(pressure.) Tj
+0 -12 Td
+(- Historical resolved issue: older issue already addressed by later configuration/security ) Tj
+0 -12 Td
+(changes.) Tj
+0 -12 Td
+(- Informational warning: worth watching, but current evidence does not show node failure.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Classified recent sanitized events from the last four hours:) Tj
+0 -12 Td
+(- [Report collection issue] probe failed: Command '['journalctl', '-u', 'monad-bft', '--since',) Tj
+0 -12 Td
+( '4 hours ago', '--no-pager']' timed out after 20 seconds) Tj
+0 -12 Td
+(- [Report collection issue] probe failed: Command '['journalctl', '-u', 'monad-execution', '--) Tj
+0 -12 Td
+(since', '4 hours ago', '--no-pager']' timed out after 20 seconds) Tj
+0 -12 Td
+(- [Informational warning] May 08 12:03:02 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T18:03:02.380482Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -152,7 +176,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 08 12:11:14 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 12:11:14 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T18:11:14.334000Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -160,7 +184,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 08 12:11:32 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 12:11:32 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T18:11:32.195562Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -168,7 +192,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 08 12:13:54 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 12:13:54 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T18:13:54.319733Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -176,7 +200,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 08 12:14:57 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 12:14:57 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T18:14:57.341869Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -184,7 +208,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 08 12:22:24 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 12:22:24 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T18:22:24.486913Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -192,7 +216,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 08 12:22:47 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 12:22:47 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T18:22:47.268769Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -200,7 +224,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 08 12:23:08 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 12:23:08 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T18:23:08.816915Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -208,7 +232,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 08 12:32:14 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 12:32:14 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T18:32:14.239432Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -216,7 +240,7 @@ BT
 0 -12 Td
 (abruptly","hostname":"\\"hermanshideaway.tailae9d32.ts.net:8081\\"","peer_addr":"Some\(\\"[...) Tj
 0 -12 Td
-(- May 08 12:36:31 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 12:36:31 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T18:36:31.490153Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -224,12 +248,23 @@ BT
 0 -12 Td
 (abruptly","hostname":"\\"hermanshideaway.tailae9d32.ts.net:8081\\"","peer_addr":"Some\(\\"[...) Tj
 0 -12 Td
-(- May 08 12:43:52 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 12:43:52 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T18:43:52.377302Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
 (closed ) Tj
-0 -12 Td
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 3690 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
 (abruptly","hostname":"\\"hermanshideaway.tailae9d32.ts.net:8081\\"","peer_addr":"Some\(\\"[...) Tj
 0 -12 Td
 () Tj
@@ -253,18 +288,7 @@ BT
 (  Privacy note: No command lines, passwords, keys, peer addresses, node identities, wallet-like) Tj
 0 -12 Td
 ( values, or public IP addresses are recorded here.) Tj
-ET
-endstream
-endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
-endobj
-8 0 obj
-<< /Length 2867 >>
-stream
-BT
-/F1 9 Tf
-54 738 Td
+0 -12 Td
 (- 2026-05-07: Restricted Monad secret-bearing files to owner-only read/write permissions.) Tj
 0 -12 Td
 (  Why: The local keystore environment file and node identity key files were more broadly ) Tj
@@ -699,16 +723,16 @@ xref
 0000000064 00000 n 
 0000000140 00000 n 
 0000000208 00000 n 
-0000003407 00000 n 
-0000003533 00000 n 
-0000007858 00000 n 
-0000007984 00000 n 
-0000010903 00000 n 
-0000011029 00000 n 
-0000118820 00000 n 
-0000118980 00000 n 
+0000003444 00000 n 
+0000003570 00000 n 
+0000008162 00000 n 
+0000008288 00000 n 
+0000012030 00000 n 
+0000012156 00000 n 
+0000119947 00000 n 
+0000120107 00000 n 
 trailer
 << /Size 13 /Root 1 0 R >>
 startxref
-119135
+120262
 %%EOF

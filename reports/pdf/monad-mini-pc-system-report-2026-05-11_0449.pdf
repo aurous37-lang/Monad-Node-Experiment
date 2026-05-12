@@ -10,7 +10,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 4 0 obj
-<< /Length 3194 >>
+<< /Length 3186 >>
 stream
 BT
 /F1 9 Tf
@@ -123,11 +123,11 @@ BT
 0 -12 Td
 (----------------------------------) Tj
 0 -12 Td
-(Recent sanitized events from the last four hours:) Tj
+(Event classification legend:) Tj
 0 -12 Td
-(- May 11 03:19:14 [redacted-host] monad[643608]: 2026-05-11 09:19:14.154269291 [643628] ) Tj
+(- Node-impacting: likely affected node availability, execution, RPC, or service stability.) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(- Report collection issue: the report probe failed, but this does not by itself indicate node ) Tj
 ET
 endstream
 endobj
@@ -135,124 +135,124 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 4404 >>
+<< /Length 4824 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
-(target=71508510) Tj
+(failure.) Tj
 0 -12 Td
-(- May 11 03:19:14 [redacted-host] monad[643608]: 2026-05-11 09:19:14.154400022 [643628] ) Tj
+(- Expected pruned-node limitation: expected limitation from recent-state/pruned operation or ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(older state requests.) Tj
 0 -12 Td
-(target=71508510) Tj
+(- Client/WebSocket noise: usually client disconnects, reconnects, or local bot/WebSocket ) Tj
 0 -12 Td
-(- May 11 03:19:14 [redacted-host] monad[643608]: 2026-05-11 09:19:14.888079266 [643628] ) Tj
+(pressure.) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(- Historical resolved issue: older issue already addressed by later configuration/security ) Tj
 0 -12 Td
-(target=71508510) Tj
+(changes.) Tj
 0 -12 Td
-(- May 11 03:39:14 [redacted-host] monad[643608]: 2026-05-11 09:39:14.261799737 [643628] ) Tj
+(- Informational warning: worth watching, but current evidence does not show node failure.) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+() Tj
 0 -12 Td
-(target=71508510) Tj
+(Classified recent sanitized events from the last four hours:) Tj
 0 -12 Td
-(- May 11 03:39:14 [redacted-host] monad[643608]: 2026-05-11 09:39:14.399185874 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:19:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:19:14.154269291 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 03:39:14 [redacted-host] monad[643608]: 2026-05-11 09:39:14.399330772 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:19:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:19:14.154400022 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 03:39:14 [redacted-host] monad[643608]: 2026-05-11 09:39:14.399451946 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:19:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:19:14.888079266 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 03:39:14 [redacted-host] monad[643608]: 2026-05-11 09:39:14.994645171 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:39:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:39:14.261799737 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 03:59:14 [redacted-host] monad[643608]: 2026-05-11 09:59:14.358568852 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:39:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:39:14.399185874 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 03:59:14 [redacted-host] monad[643608]: 2026-05-11 09:59:14.480147148 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:39:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:39:14.399330772 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 03:59:14 [redacted-host] monad[643608]: 2026-05-11 09:59:14.480285529 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:39:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:39:14.399451946 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 03:59:14 [redacted-host] monad[643608]: 2026-05-11 09:59:14.480412002 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:39:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:39:14.994645171 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 03:59:15 [redacted-host] monad[643608]: 2026-05-11 09:59:15.090647020 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:59:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:59:14.358568852 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 04:19:14 [redacted-host] monad[643608]: 2026-05-11 10:19:14.461338934 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:59:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:59:14.480147148 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 04:19:14 [redacted-host] monad[643608]: 2026-05-11 10:19:14.591939053 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:59:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:59:14.480285529 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 04:19:14 [redacted-host] monad[643608]: 2026-05-11 10:19:14.592222291 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:59:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:59:14.480412002 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 04:19:14 [redacted-host] monad[643608]: 2026-05-11 10:19:14.592272654 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 03:59:15 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(09:59:15.090647020 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 04:19:15 [redacted-host] monad[643608]: 2026-05-11 10:19:15.199677137 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 04:19:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(10:19:14.461338934 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 04:39:14 [redacted-host] monad[643608]: 2026-05-11 10:39:14.565420974 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 04:19:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(10:19:14.591939053 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 04:39:14 [redacted-host] monad[643608]: 2026-05-11 10:39:14.690447070 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 04:19:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(10:19:14.592222291 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 ET
 endstream
 endobj
@@ -260,32 +260,56 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
 endobj
 8 0 obj
-<< /Length 4513 >>
+<< /Length 4619 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 04:39:14 [redacted-host] monad[643608]: 2026-05-11 10:39:14.690605597 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 04:19:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(10:19:14.592272654 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 04:39:14 [redacted-host] monad[643608]: 2026-05-11 10:39:14.690738693 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 04:19:15 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(10:19:15.199677137 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 04:39:15 [redacted-host] monad[643608]: 2026-05-11 10:39:15.311270414 [643628] ) Tj
+(- [Expected pruned-node limitation] May 11 04:39:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
 0 -12 Td
-(statesync_server.cpp:338 LOG_INFO        Request failed: target root not found for ) Tj
+(10:39:14.565420974 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
 0 -12 Td
-(target=71508510) Tj
+(root not found for target=71508510) Tj
 0 -12 Td
-(- May 11 04:46:02 [redacted-host] monad-rpc[1984726]: ) Tj
+(- [Expected pruned-node limitation] May 11 04:39:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
+0 -12 Td
+(10:39:14.690447070 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
+0 -12 Td
+(root not found for target=71508510) Tj
+0 -12 Td
+(- [Expected pruned-node limitation] May 11 04:39:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
+0 -12 Td
+(10:39:14.690605597 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
+0 -12 Td
+(root not found for target=71508510) Tj
+0 -12 Td
+(- [Expected pruned-node limitation] May 11 04:39:14 [redacted-host] monad[643608]: 2026-05-11 ) Tj
+0 -12 Td
+(10:39:14.690738693 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
+0 -12 Td
+(root not found for target=71508510) Tj
+0 -12 Td
+(- [Expected pruned-node limitation] May 11 04:39:15 [redacted-host] monad[643608]: 2026-05-11 ) Tj
+0 -12 Td
+(10:39:15.311270414 [643628] statesync_server.cpp:338 LOG_INFO        Request failed: target ) Tj
+0 -12 Td
+(root not found for target=71508510) Tj
+0 -12 Td
+(- [Client/WebSocket noise] May 11 04:46:02 [redacted-host] monad-rpc[1984726]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-11T10:46:02.539115Z","level":"ERROR","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -354,7 +378,18 @@ BT
 (- 2026-05-07: Kept public report generation sanitized and avoided raw systemctl status or full ) Tj
 0 -12 Td
 (process command-line capture.) Tj
-0 -12 Td
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 1836 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
 (  Why: Full status and process listings can expose sensitive command-line arguments. Reports ) Tj
 0 -12 Td
 (use narrower systemd fields, sanitized journal excerpts, and explicit redaction before writing ) Tj
@@ -378,18 +413,7 @@ BT
 (payloads, peer identities, public IP addresses, keys, command lines, or unlock values are ) Tj
 0 -12 Td
 (included.) Tj
-ET
-endstream
-endobj
-9 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
-endobj
-10 0 obj
-<< /Length 736 >>
-stream
-BT
-/F1 9 Tf
-54 738 Td
+0 -12 Td
 () Tj
 0 -12 Td
 (Research Notes) Tj
@@ -703,18 +727,18 @@ xref
 0000000064 00000 n 
 0000000147 00000 n 
 0000000215 00000 n 
-0000003461 00000 n 
-0000003587 00000 n 
-0000008043 00000 n 
-0000008169 00000 n 
-0000012734 00000 n 
-0000012860 00000 n 
-0000013648 00000 n 
-0000013776 00000 n 
-0000101815 00000 n 
-0000101975 00000 n 
+0000003453 00000 n 
+0000003579 00000 n 
+0000008455 00000 n 
+0000008581 00000 n 
+0000013252 00000 n 
+0000013378 00000 n 
+0000015267 00000 n 
+0000015395 00000 n 
+0000103434 00000 n 
+0000103594 00000 n 
 trailer
 << /Size 15 /Root 1 0 R >>
 startxref
-102130
+103749
 %%EOF

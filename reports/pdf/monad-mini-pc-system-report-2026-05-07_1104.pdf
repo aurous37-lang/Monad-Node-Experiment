@@ -10,7 +10,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 4 0 obj
-<< /Length 3163 >>
+<< /Length 3179 >>
 stream
 BT
 /F1 9 Tf
@@ -123,11 +123,11 @@ BT
 0 -12 Td
 (----------------------------------) Tj
 0 -12 Td
-(Recent sanitized events from the last four hours:) Tj
+(Event classification legend:) Tj
 0 -12 Td
-(- May 07 08:23:13 [redacted-host] monad-rpc[39489]: ) Tj
+(- Node-impacting: likely affected node availability, execution, RPC, or service stability.) Tj
 0 -12 Td
-({"timestamp":"2026-05-07T14:23:13.659932Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
+(- Report collection issue: the report probe failed, but this does not by itself indicate node ) Tj
 ET
 endstream
 endobj
@@ -135,20 +135,44 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 4972 >>
+<< /Length 5083 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+(failure.) Tj
+0 -12 Td
+(- Expected pruned-node limitation: expected limitation from recent-state/pruned operation or ) Tj
+0 -12 Td
+(older state requests.) Tj
+0 -12 Td
+(- Client/WebSocket noise: usually client disconnects, reconnects, or local bot/WebSocket ) Tj
+0 -12 Td
+(pressure.) Tj
+0 -12 Td
+(- Historical resolved issue: older issue already addressed by later configuration/security ) Tj
+0 -12 Td
+(changes.) Tj
+0 -12 Td
+(- Informational warning: worth watching, but current evidence does not show node failure.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Classified recent sanitized events from the last four hours:) Tj
+0 -12 Td
+(- [Client/WebSocket noise] May 07 08:23:13 [redacted-host] monad-rpc[39489]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-07T14:23:13.659932Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
+0 -12 Td
 (error","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-ip]\\"\)","err":"Closed"},...) Tj
 0 -12 Td
-(- May 07 08:56:10 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 08:56:10 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T14:56:10.917751Z","level":"ERROR","fields":{"message":"ws connection ) Tj
 0 -12 Td
 (protocol error","err":"Overflow"},"target":"monad_rpc::websocket::handler"}) Tj
 0 -12 Td
-(- May 07 09:06:22 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 07 09:06:22 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T15:06:22.842297Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -156,7 +180,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 07 10:04:31 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 07 10:04:31 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:04:31.919060Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -164,13 +188,13 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 07 10:04:32 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:04:32 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:04:32.922928Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
 0 -12 Td
 (error","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-ip]\\"\)","err":"Closed"},...) Tj
 0 -12 Td
-(- May 07 10:04:35 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:04:35 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:04:35.106776Z","level":"WARN","fields":{"message":"ws ) Tj
 0 -12 Td
@@ -178,31 +202,31 @@ BT
 0 -12 Td
 (Closed"},"target":"monad_rpc::websocket::handler"}) Tj
 0 -12 Td
-(- May 07 10:04:43 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:04:43 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:04:43.285340Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
 0 -12 Td
 (error","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-ip]\\"\)","err":"Closed"},...) Tj
 0 -12 Td
-(- May 07 10:05:03 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:05:03 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:05:03.285790Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
 0 -12 Td
 (error","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-ip]\\"\)","err":"Closed"},...) Tj
 0 -12 Td
-(- May 07 10:05:23 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:05:23 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:05:23.285737Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
 0 -12 Td
 (error","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-ip]\\"\)","err":"Closed"},...) Tj
 0 -12 Td
-(- May 07 10:05:38 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:05:38 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:05:38.329029Z","level":"ERROR","fields":{"message":"ws connection ) Tj
 0 -12 Td
 (protocol error","err":"Overflow"},"target":"monad_rpc::websocket::handler"}) Tj
 0 -12 Td
-(- May 07 10:22:00 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 07 10:22:00 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:22:00.604647Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -210,13 +234,13 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 07 10:22:04 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:22:04 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:22:04.711984Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
 0 -12 Td
 (error","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-ip]\\"\)","err":"Closed"},...) Tj
 0 -12 Td
-(- May 07 10:22:08 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:22:08 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:22:08.228764Z","level":"WARN","fields":{"message":"ws ) Tj
 0 -12 Td
@@ -224,35 +248,11 @@ BT
 0 -12 Td
 (Closed"},"target":"monad_rpc::websocket::handler"}) Tj
 0 -12 Td
-(- May 07 10:22:24 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:22:24 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:22:24.711791Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
 0 -12 Td
 (error","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-ip]\\"\)","err":"Closed"},...) Tj
-0 -12 Td
-(- May 07 10:22:44 [redacted-host] monad-rpc[39489]: ) Tj
-0 -12 Td
-({"timestamp":"2026-05-07T16:22:44.711853Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
-0 -12 Td
-(error","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-ip]\\"\)","err":"Closed"},...) Tj
-0 -12 Td
-(- May 07 10:23:06 [redacted-host] monad-rpc[39489]: ) Tj
-0 -12 Td
-({"timestamp":"2026-05-07T16:23:06.234551Z","level":"ERROR","fields":{"message":"ws connection ) Tj
-0 -12 Td
-(protocol error","err":"Overflow"},"target":"monad_rpc::websocket::handler"}) Tj
-0 -12 Td
-(- May 07 10:24:17 [redacted-host] monad-rpc[39489]: ) Tj
-0 -12 Td
-({"timestamp":"2026-05-07T16:24:17.825460Z","level":"WARN","fields":{"message":"ws connection ) Tj
-0 -12 Td
-(closed abruptly","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-) Tj
-0 -12 Td
-(ip]\\"\)"},"target...) Tj
-0 -12 Td
-(- May 07 10:24:18 [redacted-host] monad-rpc[39489]: ) Tj
-0 -12 Td
-({"timestamp":"2026-05-07T16:24:18.319406Z","level":"WARN","fields":{"message":"ws ) Tj
 ET
 endstream
 endobj
@@ -260,40 +260,64 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
 endobj
 8 0 obj
-<< /Length 4566 >>
+<< /Length 4902 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+(- [Client/WebSocket noise] May 07 10:22:44 [redacted-host] monad-rpc[39489]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-07T16:22:44.711853Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
+0 -12 Td
+(error","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-ip]\\"\)","err":"Closed"},...) Tj
+0 -12 Td
+(- [Client/WebSocket noise] May 07 10:23:06 [redacted-host] monad-rpc[39489]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-07T16:23:06.234551Z","level":"ERROR","fields":{"message":"ws connection ) Tj
+0 -12 Td
+(protocol error","err":"Overflow"},"target":"monad_rpc::websocket::handler"}) Tj
+0 -12 Td
+(- [Informational warning] May 07 10:24:17 [redacted-host] monad-rpc[39489]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-07T16:24:17.825460Z","level":"WARN","fields":{"message":"ws connection ) Tj
+0 -12 Td
+(closed abruptly","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-) Tj
+0 -12 Td
+(ip]\\"\)"},"target...) Tj
+0 -12 Td
+(- [Client/WebSocket noise] May 07 10:24:18 [redacted-host] monad-rpc[39489]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-07T16:24:18.319406Z","level":"WARN","fields":{"message":"ws ) Tj
+0 -12 Td
 (send_notification failed to send notification, error: ) Tj
 0 -12 Td
 (Closed"},"target":"monad_rpc::websocket::handler"}) Tj
 0 -12 Td
-(- May 07 10:24:35 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:24:35 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:24:35.842563Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
 0 -12 Td
 (error","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-ip]\\"\)","err":"Closed"},...) Tj
 0 -12 Td
-(- May 07 10:24:55 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:24:55 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:24:55.842908Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
 0 -12 Td
 (error","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-ip]\\"\)","err":"Closed"},...) Tj
 0 -12 Td
-(- May 07 10:25:15 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:25:15 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:25:15.842287Z","level":"WARN","fields":{"message":"ws handler ping ) Tj
 0 -12 Td
 (error","hostname":"\\"[redacted-ip]\\"","peer_addr":"Some\(\\"[redacted-ip]\\"\)","err":"Closed"},...) Tj
 0 -12 Td
-(- May 07 10:25:24 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 10:25:24 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:25:24.783023Z","level":"ERROR","fields":{"message":"ws connection ) Tj
 0 -12 Td
 (protocol error","err":"Overflow"},"target":"monad_rpc::websocket::handler"}) Tj
 0 -12 Td
-(- May 07 10:58:02 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 07 10:58:02 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:58:02.225436Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -301,7 +325,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 07 10:59:42 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 07 10:59:42 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T16:59:42.694687Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -354,7 +378,18 @@ BT
 (privileged local users.) Tj
 0 -12 Td
 (  Privacy note: The actual process command line and keystore unlock value are intentionally ) Tj
-0 -12 Td
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 1867 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
 (omitted.) Tj
 0 -12 Td
 (- 2026-05-07: Documented the remaining upstream security limitation for Monad BFT keystore ) Tj
@@ -378,18 +413,7 @@ BT
 (use narrower systemd fields, sanitized journal excerpts, and explicit redaction before writing ) Tj
 0 -12 Td
 (TXT/PDF outputs.) Tj
-ET
-endstream
-endobj
-9 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
-endobj
-10 0 obj
-<< /Length 925 >>
-stream
-BT
-/F1 9 Tf
-54 738 Td
+0 -12 Td
 (  Privacy note: Reports redact hostnames, usernames, IP addresses, keys, signatures, wallet-) Tj
 0 -12 Td
 (like hex strings, token-like values, and sensitive argument values.) Tj
@@ -771,18 +795,18 @@ xref
 0000000064 00000 n 
 0000000147 00000 n 
 0000000215 00000 n 
-0000003430 00000 n 
-0000003556 00000 n 
-0000008580 00000 n 
-0000008706 00000 n 
-0000013324 00000 n 
-0000013450 00000 n 
-0000014427 00000 n 
-0000014555 00000 n 
-0000125396 00000 n 
-0000125556 00000 n 
+0000003446 00000 n 
+0000003572 00000 n 
+0000008707 00000 n 
+0000008833 00000 n 
+0000013787 00000 n 
+0000013913 00000 n 
+0000015833 00000 n 
+0000015961 00000 n 
+0000126802 00000 n 
+0000126962 00000 n 
 trailer
 << /Size 15 /Root 1 0 R >>
 startxref
-125711
+127117
 %%EOF

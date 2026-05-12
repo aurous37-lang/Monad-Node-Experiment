@@ -10,7 +10,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 4 0 obj
-<< /Length 3144 >>
+<< /Length 3147 >>
 stream
 BT
 /F1 9 Tf
@@ -125,9 +125,9 @@ BT
 0 -12 Td
 (----------------------------------) Tj
 0 -12 Td
-(Recent sanitized events from the last four hours:) Tj
+(Event classification legend:) Tj
 0 -12 Td
-(- May 08 07:25:17 [redacted-host] monad[39204]: monad: /[redacted-) Tj
+(- Node-impacting: likely affected node availability, execution, RPC, or service stability.) Tj
 ET
 endstream
 endobj
@@ -135,34 +135,58 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 4569 >>
+<< /Length 4774 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+(- Report collection issue: the report probe failed, but this does not by itself indicate node ) Tj
+0 -12 Td
+(failure.) Tj
+0 -12 Td
+(- Expected pruned-node limitation: expected limitation from recent-state/pruned operation or ) Tj
+0 -12 Td
+(older state requests.) Tj
+0 -12 Td
+(- Client/WebSocket noise: usually client disconnects, reconnects, or local bot/WebSocket ) Tj
+0 -12 Td
+(pressure.) Tj
+0 -12 Td
+(- Historical resolved issue: older issue already addressed by later configuration/security ) Tj
+0 -12 Td
+(changes.) Tj
+0 -12 Td
+(- Informational warning: worth watching, but current evidence does not show node failure.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Classified recent sanitized events from the last four hours:) Tj
+0 -12 Td
+(- [Historical resolved issue] May 08 07:25:17 [redacted-host] monad[39204]: monad: /[redacted-) Tj
+0 -12 Td
 (token]block_hash_buffer.cpp:51: virtual const monad::bytes32_t& ) Tj
 0 -12 Td
 (monad::BlockHashBufferFinalized::get\(uint64_t\) const: Assertion 'n < n_ && n + N >= n_' failed.) Tj
 0 -12 Td
-(- May 08 07:25:17 [redacted-host] systemd[1]: monad-execution.service: Failed with result ) Tj
+(- [Node-impacting] May 08 07:25:17 [redacted-host] systemd[1]: monad-execution.service: Failed ) Tj
 0 -12 Td
-('core-dump'.) Tj
+(with result 'core-dump'.) Tj
 0 -12 Td
-(- May 08 07:25:28 [redacted-host] systemd[1]: monad-execution.service: Scheduled restart job, ) Tj
+(- [Informational] May 08 07:25:28 [redacted-host] systemd[1]: monad-execution.service: ) Tj
 0 -12 Td
-(restart counter is at 1.) Tj
+(Scheduled restart job, restart counter is at 1.) Tj
 0 -12 Td
-(- May 08 07:25:28 [redacted-host] systemd[1]: Started monad-execution.service - "Service file ) Tj
+(- [Informational] May 08 07:25:28 [redacted-host] systemd[1]: Started monad-execution.service -) Tj
 0 -12 Td
-(for Monad Execution".) Tj
+( "Service file for Monad Execution".) Tj
 0 -12 Td
-(- May 08 07:25:28 [redacted-host] monad[643608]: 2026-05-08 13:25:28.205179302 [643608] ) Tj
+(- [Informational warning] May 08 07:25:28 [redacted-host] monad[643608]: 2026-05-08 ) Tj
 0 -12 Td
-(event.cpp:321 LOG_WARNING        file system hosting event ring file `/[redacted-) Tj
+(13:25:28.205179302 [643608] event.cpp:321 LOG_WARNING        file system hosting event ring ) Tj
 0 -12 Td
-(token]-2MB/event-rings/monad-exec-events` does not support MAP_HUGETLB!) Tj
+(file `/[redacted-token]-2MB/event-rings/monad-exec-events` does not support MAP_HUGETLB!) Tj
 0 -12 Td
-(- May 08 06:57:40 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 08 06:57:40 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T12:57:40.538317Z","level":"WARN","fields":{"message":"ws ) Tj
 0 -12 Td
@@ -170,13 +194,13 @@ BT
 0 -12 Td
 (Closed"},"target":"monad_rpc::websocket::handler"}) Tj
 0 -12 Td
-(- May 08 07:19:48 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Historical resolved issue] May 08 07:19:48 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:19:48.345881Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
 0 -12 Td
 (txpool ipc client died, trying to reconnect"},"target":"monad_rpc::txpool"}) Tj
 0 -12 Td
-(- May 08 07:19:48 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Historical resolved issue] May 08 07:19:48 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:19:48.346342Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
 0 -12 Td
@@ -184,13 +208,13 @@ BT
 0 -12 Td
 (k...) Tj
 0 -12 Td
-(- May 08 07:20:10 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Historical resolved issue] May 08 07:20:10 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:20:10.819887Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
 0 -12 Td
 (txpool ipc client died, trying to reconnect"},"target":"monad_rpc::txpool"}) Tj
 0 -12 Td
-(- May 08 07:20:10 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Historical resolved issue] May 08 07:20:10 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:20:10.819979Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
 0 -12 Td
@@ -198,7 +222,7 @@ BT
 0 -12 Td
 (k...) Tj
 0 -12 Td
-(- May 08 07:21:17 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 07:21:17 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:21:17.265131Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -206,13 +230,13 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 08 07:21:21 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Historical resolved issue] May 08 07:21:21 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:21:21.557099Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
 0 -12 Td
 (txpool ipc client died, trying to reconnect"},"target":"monad_rpc::txpool"}) Tj
 0 -12 Td
-(- May 08 07:21:21 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Historical resolved issue] May 08 07:21:21 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:21:21.557183Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
 0 -12 Td
@@ -220,7 +244,7 @@ BT
 0 -12 Td
 (k...) Tj
 0 -12 Td
-(- May 08 07:21:34 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Historical resolved issue] May 08 07:21:34 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:21:34.426187Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
 0 -12 Td
@@ -228,31 +252,7 @@ BT
 0 -12 Td
 (message...) Tj
 0 -12 Td
-(- May 08 07:22:00 [redacted-host] monad-rpc[39489]: ) Tj
-0 -12 Td
-({"timestamp":"2026-05-08T13:22:00.036474Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
-0 -12 Td
-(failed to reconnect txpool ipc client","err":"Os { code: 111, kind: ConnectionRefused, ) Tj
-0 -12 Td
-(message...) Tj
-0 -12 Td
-(- May 08 07:22:58 [redacted-host] monad-rpc[39489]: ) Tj
-0 -12 Td
-({"timestamp":"2026-05-08T13:22:58.076135Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
-0 -12 Td
-(txpool ipc client died, trying to reconnect"},"target":"monad_rpc::txpool"}) Tj
-0 -12 Td
-(- May 08 07:22:58 [redacted-host] monad-rpc[39489]: ) Tj
-0 -12 Td
-({"timestamp":"2026-05-08T13:22:58.076248Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
-0 -12 Td
-(txpool ipc client failed to reconnect, falling back to SocketWatcher","err":"Os { code: 111, ) Tj
-0 -12 Td
-(k...) Tj
-0 -12 Td
-(- May 08 07:23:10 [redacted-host] monad-rpc[39489]: ) Tj
-0 -12 Td
-({"timestamp":"2026-05-08T13:23:10.908083Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
+(- [Historical resolved issue] May 08 07:22:00 [redacted-host] monad-rpc[39489]: ) Tj
 ET
 endstream
 endobj
@@ -260,16 +260,40 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
 endobj
 8 0 obj
-<< /Length 4327 >>
+<< /Length 4532 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+({"timestamp":"2026-05-08T13:22:00.036474Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
+0 -12 Td
 (failed to reconnect txpool ipc client","err":"Os { code: 111, kind: ConnectionRefused, ) Tj
 0 -12 Td
 (message...) Tj
 0 -12 Td
-(- May 08 07:23:35 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Historical resolved issue] May 08 07:22:58 [redacted-host] monad-rpc[39489]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-08T13:22:58.076135Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
+0 -12 Td
+(txpool ipc client died, trying to reconnect"},"target":"monad_rpc::txpool"}) Tj
+0 -12 Td
+(- [Historical resolved issue] May 08 07:22:58 [redacted-host] monad-rpc[39489]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-08T13:22:58.076248Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
+0 -12 Td
+(txpool ipc client failed to reconnect, falling back to SocketWatcher","err":"Os { code: 111, ) Tj
+0 -12 Td
+(k...) Tj
+0 -12 Td
+(- [Historical resolved issue] May 08 07:23:10 [redacted-host] monad-rpc[39489]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-08T13:23:10.908083Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
+0 -12 Td
+(failed to reconnect txpool ipc client","err":"Os { code: 111, kind: ConnectionRefused, ) Tj
+0 -12 Td
+(message...) Tj
+0 -12 Td
+(- [Historical resolved issue] May 08 07:23:35 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:23:35.166041Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
 0 -12 Td
@@ -277,7 +301,7 @@ BT
 0 -12 Td
 (message...) Tj
 0 -12 Td
-(- May 08 07:24:46 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Historical resolved issue] May 08 07:24:46 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:24:46.050098Z","level":"ERROR","fields":{"message":"TxPoolBridge ) Tj
 0 -12 Td
@@ -285,7 +309,7 @@ BT
 0 -12 Td
 (message...) Tj
 0 -12 Td
-(- May 08 07:25:11 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 07:25:11 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:25:11.880278Z","level":"ERROR","fields":{"message":"Error ) Tj
 0 -12 Td
@@ -293,7 +317,7 @@ BT
 0 -12 Td
 (txs","block_key":"Finalized\(FinalizedBlockKey\(73249451\)\)"...) Tj
 0 -12 Td
-(- May 08 07:25:11 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 07:25:11 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:25:11.880315Z","level":"ERROR","fields":{"message":"Error ) Tj
 0 -12 Td
@@ -301,7 +325,7 @@ BT
 0 -12 Td
 (receipts","block_key":"Finalized\(FinalizedBlockKey\(732494...) Tj
 0 -12 Td
-(- May 08 07:25:17 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 07:25:17 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:25:17.216090Z","level":"ERROR","fields":{"message":"Error ) Tj
 0 -12 Td
@@ -309,7 +333,7 @@ BT
 0 -12 Td
 (txs","block_key":"Proposed\(ProposedBlockKey\(73249451, d5c...) Tj
 0 -12 Td
-(- May 08 07:25:17 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 08 07:25:17 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-08T13:25:17.216122Z","level":"ERROR","fields":{"message":"Error ) Tj
 0 -12 Td
@@ -354,7 +378,18 @@ BT
 (- 2026-05-07: Confirmed normal local users cannot read the Monad BFT process command line or ) Tj
 0 -12 Td
 (environment through procfs.) Tj
-0 -12 Td
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 2226 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
 (  Why: The BFT binary currently accepts its keystore unlock value through a command-line ) Tj
 0 -12 Td
 (option, so process-argument visibility matters. Existing procfs hiding reduces exposure to non-) Tj
@@ -378,18 +413,7 @@ BT
 (  Privacy note: This notes the design limitation only; no secret [redacted] is recorded.) Tj
 0 -12 Td
 (- 2026-05-07: Kept public report generation sanitized and avoided raw systemctl status or full ) Tj
-ET
-endstream
-endobj
-9 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
-endobj
-10 0 obj
-<< /Length 1218 >>
-stream
-BT
-/F1 9 Tf
-54 738 Td
+0 -12 Td
 (process command-line capture.) Tj
 0 -12 Td
 (  Why: Full status and process listings can expose sensitive command-line arguments. Reports ) Tj
@@ -729,18 +753,18 @@ xref
 0000000064 00000 n 
 0000000147 00000 n 
 0000000215 00000 n 
-0000003411 00000 n 
-0000003537 00000 n 
-0000008158 00000 n 
-0000008284 00000 n 
-0000012663 00000 n 
-0000012789 00000 n 
-0000014060 00000 n 
-0000014188 00000 n 
-0000125900 00000 n 
-0000126060 00000 n 
+0000003414 00000 n 
+0000003540 00000 n 
+0000008366 00000 n 
+0000008492 00000 n 
+0000013076 00000 n 
+0000013202 00000 n 
+0000015481 00000 n 
+0000015609 00000 n 
+0000127321 00000 n 
+0000127481 00000 n 
 trailer
 << /Size 15 /Root 1 0 R >>
 startxref
-126215
+127636
 %%EOF

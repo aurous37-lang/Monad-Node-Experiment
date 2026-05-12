@@ -10,7 +10,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 4 0 obj
-<< /Length 3144 >>
+<< /Length 3181 >>
 stream
 BT
 /F1 9 Tf
@@ -123,11 +123,11 @@ BT
 0 -12 Td
 (----------------------------------) Tj
 0 -12 Td
-(Recent sanitized events from the last four hours:) Tj
+(Event classification legend:) Tj
 0 -12 Td
-(- probe failed: Command '['journalctl', '-u', 'monad-bft', '--since', '4 hours ago', '--no-) Tj
+(- Node-impacting: likely affected node availability, execution, RPC, or service stability.) Tj
 0 -12 Td
-(pager']' timed out after 20 seconds) Tj
+(- Report collection issue: the report probe failed, but this does not by itself indicate node ) Tj
 ET
 endstream
 endobj
@@ -135,16 +135,40 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 4294 >>
+<< /Length 4387 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
-(- probe failed: Command '['journalctl', '-u', 'monad-execution', '--since', '4 hours ago', '--) Tj
+(failure.) Tj
 0 -12 Td
-(no-pager']' timed out after 20 seconds) Tj
+(- Expected pruned-node limitation: expected limitation from recent-state/pruned operation or ) Tj
 0 -12 Td
-(- May 07 11:24:08 [redacted-host] monad-rpc[39489]: ) Tj
+(older state requests.) Tj
+0 -12 Td
+(- Client/WebSocket noise: usually client disconnects, reconnects, or local bot/WebSocket ) Tj
+0 -12 Td
+(pressure.) Tj
+0 -12 Td
+(- Historical resolved issue: older issue already addressed by later configuration/security ) Tj
+0 -12 Td
+(changes.) Tj
+0 -12 Td
+(- Informational warning: worth watching, but current evidence does not show node failure.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Classified recent sanitized events from the last four hours:) Tj
+0 -12 Td
+(- [Report collection issue] probe failed: Command '['journalctl', '-u', 'monad-bft', '--since',) Tj
+0 -12 Td
+( '4 hours ago', '--no-pager']' timed out after 20 seconds) Tj
+0 -12 Td
+(- [Report collection issue] probe failed: Command '['journalctl', '-u', 'monad-execution', '--) Tj
+0 -12 Td
+(since', '4 hours ago', '--no-pager']' timed out after 20 seconds) Tj
+0 -12 Td
+(- [Informational warning] May 07 11:24:08 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T17:24:08.758626Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -152,7 +176,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 07 13:10:00 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 07 13:10:00 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T19:10:00.115232Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -160,7 +184,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 07 13:30:41 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Client/WebSocket noise] May 07 13:30:41 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T19:30:41.931111Z","level":"WARN","fields":{"message":"ws ) Tj
 0 -12 Td
@@ -168,7 +192,7 @@ BT
 0 -12 Td
 (Closed"},"target":"monad_rpc::websocket::handler"}) Tj
 0 -12 Td
-(- May 07 13:31:14 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 07 13:31:14 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T19:31:14.484194Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -176,7 +200,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 07 13:31:26 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 07 13:31:26 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T19:31:26.812271Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -184,7 +208,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 07 13:31:54 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 07 13:31:54 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T19:31:54.884857Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -192,7 +216,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 07 13:32:06 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 07 13:32:06 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T19:32:06.572334Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -200,7 +224,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 07 13:32:12 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 07 13:32:12 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T19:32:12.990634Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -208,7 +232,7 @@ BT
 0 -12 Td
 (ip]\\"\)"},"target...) Tj
 0 -12 Td
-(- May 07 13:32:17 [redacted-host] monad-rpc[39489]: ) Tj
+(- [Informational warning] May 07 13:32:17 [redacted-host] monad-rpc[39489]: ) Tj
 0 -12 Td
 ({"timestamp":"2026-05-07T19:32:17.540685Z","level":"WARN","fields":{"message":"ws connection ) Tj
 0 -12 Td
@@ -229,7 +253,18 @@ BT
 (unit files.) Tj
 0 -12 Td
 (  Why: Keeps the node configuration easier to audit and preserve across package updates while ) Tj
-0 -12 Td
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 3176 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
 (restoring the known-good event-ring, RPC websocket, and CPU-placement behavior from the earlier) Tj
 0 -12 Td
 ( install.) Tj
@@ -253,18 +288,7 @@ BT
 (- 2026-05-07: Confirmed normal local users cannot read the Monad BFT process command line or ) Tj
 0 -12 Td
 (environment through procfs.) Tj
-ET
-endstream
-endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
-endobj
-8 0 obj
-<< /Length 2226 >>
-stream
-BT
-/F1 9 Tf
-54 738 Td
+0 -12 Td
 (  Why: The BFT binary currently accepts its keystore unlock value through a command-line ) Tj
 0 -12 Td
 (option, so process-argument visibility matters. Existing procfs hiding reduces exposure to non-) Tj
@@ -674,16 +698,16 @@ xref
 0000000064 00000 n 
 0000000140 00000 n 
 0000000208 00000 n 
-0000003404 00000 n 
-0000003530 00000 n 
-0000007876 00000 n 
-0000008002 00000 n 
-0000010280 00000 n 
-0000010406 00000 n 
-0000123271 00000 n 
-0000123431 00000 n 
+0000003441 00000 n 
+0000003567 00000 n 
+0000008006 00000 n 
+0000008132 00000 n 
+0000011360 00000 n 
+0000011486 00000 n 
+0000124351 00000 n 
+0000124511 00000 n 
 trailer
 << /Size 13 /Root 1 0 R >>
 startxref
-123586
+124666
 %%EOF
