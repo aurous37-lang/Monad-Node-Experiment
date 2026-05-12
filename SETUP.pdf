@@ -10,7 +10,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 4 0 obj
-<< /Length 3376 >>
+<< /Length 3368 >>
 stream
 BT
 /F1 9 Tf
@@ -77,11 +77,13 @@ BT
 0 -12 Td
 (   A local node can give very fast access to chain state and WebSocket data for) Tj
 0 -12 Td
-(   bots, dashboards, or trading tools running on the same network. For) Tj
+(   dashboards, trading terminals, or other trusted tools running on the same) Tj
 0 -12 Td
-(   high-volume trading or monitoring, local RPC and WebSocket access can remove) Tj
+(   network. For high-frequency trading, high-volume trading, or monitoring,) Tj
 0 -12 Td
-(   the delay and rate limits that often come from public endpoints.) Tj
+(   local RPC and WebSocket access can remove the delay and rate limits that) Tj
+0 -12 Td
+(   often come from public endpoints.) Tj
 0 -12 Td
 () Tj
 0 -12 Td
@@ -126,8 +128,6 @@ BT
 (- In this experiment, historical) Tj
 0 -12 Td
 (  data older than roughly 20 days should be backfilled from another source.) Tj
-0 -12 Td
-(- This guide assumes bare-metal Linux, not a cloud VM.) Tj
 ET
 endstream
 endobj
@@ -135,11 +135,13 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 2926 >>
+<< /Length 2980 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+(- This guide assumes bare-metal Linux, not a cloud VM.) Tj
+0 -12 Td
 (- This style of node is meant for local or small-group use, not public RPC) Tj
 0 -12 Td
 (  hosting at scale.) Tj
@@ -251,8 +253,6 @@ BT
 (These steps are intentionally simple. They are a map of the process, not a) Tj
 0 -12 Td
 (guarantee that every command will stay current forever.) Tj
-0 -12 Td
-() Tj
 ET
 endstream
 endobj
@@ -260,11 +260,13 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
 endobj
 8 0 obj
-<< /Length 2433 >>
+<< /Length 2357 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+() Tj
+0 -12 Td
 (1. Read the official docs first) Tj
 0 -12 Td
 () Tj
@@ -376,8 +378,6 @@ BT
 (5. Install the Monad package) Tj
 0 -12 Td
 () Tj
-0 -12 Td
-(   Follow the current official Monad package instructions. The official docs) Tj
 ET
 endstream
 endobj
@@ -385,11 +385,13 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
 endobj
 10 0 obj
-<< /Length 2785 >>
+<< /Length 2839 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+(   Follow the current official Monad package instructions. The official docs) Tj
+0 -12 Td
 (   show how to add the Category Labs package repository and install the Monad) Tj
 0 -12 Td
 (   package for the current network.) Tj
@@ -501,8 +503,6 @@ BT
 () Tj
 0 -12 Td
 (   The keystore password protects the node's encrypted identity keys. Treat it) Tj
-0 -12 Td
-(   like a real secret.) Tj
 ET
 endstream
 endobj
@@ -510,11 +510,13 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 10 0 R >>
 endobj
 12 0 obj
-<< /Length 2850 >>
+<< /Length 2866 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+(   like a real secret.) Tj
+0 -12 Td
 () Tj
 0 -12 Td
 (   Important:) Tj
@@ -597,13 +599,15 @@ BT
 0 -12 Td
 () Tj
 0 -12 Td
-(15. Optional: enable WebSockets for local bots) Tj
+(15. Optional: enable WebSockets for local tools) Tj
 0 -12 Td
 () Tj
 0 -12 Td
-(   WebSocket RPC is useful for bots and real-time dashboards. Monad's docs say) Tj
+(   WebSocket RPC is useful for real-time dashboards, trading terminals, and) Tj
 0 -12 Td
-(   WebSockets depend on execution events, which use a shared-memory event ring.) Tj
+(   other trusted local tools. Monad's docs say WebSockets depend on execution) Tj
+0 -12 Td
+(   events, which use a shared-memory event ring.) Tj
 0 -12 Td
 () Tj
 0 -12 Td
@@ -623,11 +627,7 @@ BT
 0 -12 Td
 () Tj
 0 -12 Td
-(   For small trading bots, keep WS local or on a trusted LAN/VPN. Do not expose) Tj
-0 -12 Td
-(   a high-limit WS endpoint to the open internet.) Tj
-0 -12 Td
-() Tj
+(   For high-frequency trading or other latency-sensitive local workflows, keep) Tj
 ET
 endstream
 endobj
@@ -635,11 +635,17 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 12 0 R >>
 endobj
 14 0 obj
-<< /Length 2961 >>
+<< /Length 2972 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+(   WS local or on a trusted LAN/VPN. Do not expose a high-limit WS endpoint to) Tj
+0 -12 Td
+(   the open internet.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
 (16. Check node health) Tj
 0 -12 Td
 () Tj
@@ -747,12 +753,6 @@ BT
 () Tj
 0 -12 Td
 (Monad's archive documentation describes how RPC can look beyond local pruned) Tj
-0 -12 Td
-(data by using an Archive Server or object storage backup.) Tj
-0 -12 Td
-() Tj
-0 -12 Td
-(The official data waterfall is:) Tj
 ET
 endstream
 endobj
@@ -760,11 +760,17 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 14 0 R >>
 endobj
 16 0 obj
-<< /Length 2929 >>
+<< /Length 2899 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+(data by using an Archive Server or object storage backup.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(The official data waterfall is:) Tj
+0 -12 Td
 () Tj
 0 -12 Td
 (1. In-memory chain state buffer) Tj
@@ -872,12 +878,6 @@ BT
 () Tj
 0 -12 Td
 (- Monad Node Operations:) Tj
-0 -12 Td
-(  https://docs.monad.xyz/node-ops) Tj
-0 -12 Td
-(- Monad Hardware Requirements:) Tj
-0 -12 Td
-(  https://docs.monad.xyz/node-ops/hardware-requirements) Tj
 ET
 endstream
 endobj
@@ -885,11 +885,17 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 16 0 R >>
 endobj
 18 0 obj
-<< /Length 659 >>
+<< /Length 822 >>
 stream
 BT
 /F1 9 Tf
 54 738 Td
+(  https://docs.monad.xyz/node-ops) Tj
+0 -12 Td
+(- Monad Hardware Requirements:) Tj
+0 -12 Td
+(  https://docs.monad.xyz/node-ops/hardware-requirements) Tj
+0 -12 Td
 (- Monad Full Node Installation:) Tj
 0 -12 Td
 (  https://docs.monad.xyz/node-ops/full-node-installation) Tj
@@ -926,23 +932,23 @@ xref
 0000000064 00000 n 
 0000000168 00000 n 
 0000000236 00000 n 
-0000003664 00000 n 
-0000003790 00000 n 
-0000006768 00000 n 
-0000006894 00000 n 
-0000009379 00000 n 
-0000009505 00000 n 
-0000012343 00000 n 
-0000012471 00000 n 
-0000015374 00000 n 
-0000015502 00000 n 
-0000018516 00000 n 
-0000018644 00000 n 
-0000021626 00000 n 
-0000021754 00000 n 
-0000022465 00000 n 
+0000003656 00000 n 
+0000003782 00000 n 
+0000006814 00000 n 
+0000006940 00000 n 
+0000009349 00000 n 
+0000009475 00000 n 
+0000012367 00000 n 
+0000012495 00000 n 
+0000015414 00000 n 
+0000015542 00000 n 
+0000018567 00000 n 
+0000018695 00000 n 
+0000021647 00000 n 
+0000021775 00000 n 
+0000022649 00000 n 
 trailer
 << /Size 20 /Root 1 0 R >>
 startxref
-22593
+22777
 %%EOF

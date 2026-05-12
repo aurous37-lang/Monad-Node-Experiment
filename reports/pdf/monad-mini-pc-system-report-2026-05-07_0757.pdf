@@ -135,7 +135,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 4432 >>
+<< /Length 4435 >>
 stream
 BT
 /F1 9 Tf
@@ -146,7 +146,7 @@ BT
 0 -12 Td
 (older state requests.) Tj
 0 -12 Td
-(- Client/WebSocket noise: usually client disconnects, reconnects, or local bot/WebSocket ) Tj
+(- Client/WebSocket noise: usually client disconnects, reconnects, or local WebSocket/client ) Tj
 0 -12 Td
 (pressure.) Tj
 0 -12 Td
@@ -781,16 +781,16 @@ xref
 0000000215 00000 n 
 0000003438 00000 n 
 0000003564 00000 n 
-0000008048 00000 n 
-0000008174 00000 n 
-0000012568 00000 n 
-0000012694 00000 n 
-0000012958 00000 n 
-0000013086 00000 n 
-0000122853 00000 n 
-0000123013 00000 n 
+0000008051 00000 n 
+0000008177 00000 n 
+0000012571 00000 n 
+0000012697 00000 n 
+0000012961 00000 n 
+0000013089 00000 n 
+0000122856 00000 n 
+0000123016 00000 n 
 trailer
 << /Size 15 /Root 1 0 R >>
 startxref
-123168
+123171
 %%EOF

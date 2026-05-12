@@ -6,8 +6,8 @@ hardware.
 This experiment is focused on a mini-PC setup intended for one operator or a
 small trusted group, not large public infrastructure or full-history archive
 service. The node is used for local RPC/WebSocket access, direct transaction
-execution, lower-latency bot workflows, and reducing some dependence on shared
-third-party endpoints.
+execution, lower-latency high-frequency trading workflows, and reducing some
+dependence on shared third-party endpoints.
 
 ## Start Here
 
