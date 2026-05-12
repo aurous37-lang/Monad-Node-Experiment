@@ -1,0 +1,272 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Length 3168 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+(Monad Mini PC Node System Report) Tj
+0 -12 Td
+(==================================) Tj
+0 -12 Td
+(Generated: 2026-05-07 [redacted-ipv6] MDT) Tj
+0 -12 Td
+(Privacy posture: public report. Hostnames, usernames, IP addresses, keys, signatures, wallet-) Tj
+0 -12 Td
+(like hex strings, and token-like values are redacted or omitted.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Executive Summary) Tj
+0 -12 Td
+(-----------------) Tj
+0 -12 Td
+(Monad services: monad-bft=active, monad-execution=active, monad-rpc=active.) Tj
+0 -12 Td
+(Current node process CPU total: approximately 0.0% across visible Monad processes.) Tj
+0 -12 Td
+(Thermals: max 85.4 C, average 40.6 C.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(System Specs) Tj
+0 -12 Td
+(------------) Tj
+0 -12 Td
+(CPU: AMD Ryzen 7 8745H w/ Radeon 780M Graphics) Tj
+0 -12 Td
+(CPU count reported by kernel: 16) Tj
+0 -12 Td
+(Online CPU range: 0-7) Tj
+0 -12 Td
+(RAM: 44Gi) Tj
+0 -12 Td
+(Root disk: 915G total, 167G used, 703G available, 20% used) Tj
+0 -12 Td
+(Kernel: 6.17.0-1020-oem) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Monad Node Runtime) Tj
+0 -12 Td
+(------------------) Tj
+0 -12 Td
+(Services:) Tj
+0 -12 Td
+(- monad-bft: active=active, state=26, restarts=1988190208, memory=unknown MB) Tj
+0 -12 Td
+(- monad-execution: active=active, state=0, restarts=3245305856, memory=unknown MB) Tj
+0 -12 Td
+(- monad-rpc: active=active, state=26, restarts=187211776, memory=unknown MB) Tj
+0 -12 Td
+(Processes: no visible Monad process rows were returned by ps.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Temperature And Fluctuation Analysis) Tj
+0 -12 Td
+(------------------------------------) Tj
+0 -12 Td
+(- Current thermal snapshot: average 40.6 C, maximum 85.4 C across 11 reported sensors.) Tj
+0 -12 Td
+(- Four-hour comparison: no prior sample is available yet; this report establishes the baseline.) Tj
+0 -12 Td
+(Top reported sensor readings:) Tj
+0 -12 Td
+(- k10temp-pci-00c3 / Tctl: 85.4 C) Tj
+0 -12 Td
+(- amdgpu-pci-c500 / edge: 56.0 C) Tj
+0 -12 Td
+(- \(crit = +94.8∞C\) / temp1: 52.0 C) Tj
+0 -12 Td
+(- spd5118-i2c-0-50 / temp1: 36.2 C) Tj
+0 -12 Td
+(- nvme-pci-0100 / Composite: 33.9 C) Tj
+0 -12 Td
+(- \(crit = +84.8∞C\) / Sensor 1: 33.9 C) Tj
+0 -12 Td
+(- nvme-pci-0400 / Composite: 32.9 C) Tj
+0 -12 Td
+(- spd5118-i2c-0-51 / temp1: 32.8 C) Tj
+0 -12 Td
+(- \(crit = +94.8∞C\) / Sensor 1: 31.9 C) Tj
+0 -12 Td
+(- \(crit = +94.8∞C\) / Sensor 2: 31.9 C) Tj
+0 -12 Td
+(- acpitz-acpi-0 / temp1: 20.0 C) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(System And Node Events Cross-Check) Tj
+0 -12 Td
+(----------------------------------) Tj
+0 -12 Td
+(Recent sanitized events from the last four hours:) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] \(onad-rpc\)[redacted-ipv6]: monad-rpc.service: Failed ) Tj
+0 -12 Td
+(to set up CPU affinity: Invalid argument) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: monad-rpc.service: Failed with result ) Tj
+0 -12 Td
+('exit-code'.) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: monad-rpc.service: Scheduled restart job, ) Tj
+0 -12 Td
+(restart counter is at 23.) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: Started monad-rpc.service - "Service file ) Tj
+0 -12 Td
+(for Monad RPC".) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 4234 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+(- May 07 [redacted-ipv6] [redacted-host] \(onad-rpc\)[redacted-ipv6]: monad-rpc.service: Failed ) Tj
+0 -12 Td
+(to set up CPU affinity: Invalid argument) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: monad-rpc.service: Failed with result ) Tj
+0 -12 Td
+('exit-code'.) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: monad-rpc.service: Scheduled restart job, ) Tj
+0 -12 Td
+(restart counter is at 24.) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: Started monad-rpc.service - "Service file ) Tj
+0 -12 Td
+(for Monad RPC".) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] \(onad-rpc\)[redacted-ipv6]: monad-rpc.service: Failed ) Tj
+0 -12 Td
+(to set up CPU affinity: Invalid argument) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: monad-rpc.service: Failed with result ) Tj
+0 -12 Td
+('exit-code'.) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: monad-rpc.service: Scheduled restart job, ) Tj
+0 -12 Td
+(restart counter is at 25.) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: Started monad-rpc.service - "Service file ) Tj
+0 -12 Td
+(for Monad RPC".) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] \(onad-rpc\)[redacted-ipv6]: monad-rpc.service: Failed ) Tj
+0 -12 Td
+(to set up CPU affinity: Invalid argument) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: monad-rpc.service: Failed with result ) Tj
+0 -12 Td
+('exit-code'.) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: monad-rpc.service: Scheduled restart job, ) Tj
+0 -12 Td
+(restart counter is at 26.) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: Started monad-rpc.service - "Service file ) Tj
+0 -12 Td
+(for Monad RPC".) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] \(onad-rpc\)[redacted-ipv6]: monad-rpc.service: Failed ) Tj
+0 -12 Td
+(to set up CPU affinity: Invalid argument) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: monad-rpc.service: Failed with result ) Tj
+0 -12 Td
+('exit-code'.) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: Stopped monad-rpc.service - "Service file ) Tj
+0 -12 Td
+(for Monad RPC".) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] systemd[1]: Started monad-rpc.service - "Service file ) Tj
+0 -12 Td
+(for Monad RPC".) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] monad-rpc[redacted-ipv6]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-07T12:43:05.621447Z","level":"ERROR","fields":{"message":"Error ) Tj
+0 -12 Td
+(traversing db while populating triedb cache txs","block_key":"Proposed\(ProposedBlockKe...) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] monad-rpc[redacted-ipv6]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-07T12:43:05.621487Z","level":"ERROR","fields":{"message":"Error ) Tj
+0 -12 Td
+(traversing db while populating triedb cache receipts","block_key":"Proposed\(ProposedBl...) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] monad-rpc[redacted-ipv6]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-07T12:43:05.621450Z","level":"ERROR","fields":{"message":"Error ) Tj
+0 -12 Td
+(traversing db while populating triedb cache txs","block_key":"Proposed\(ProposedBlockKe...) Tj
+0 -12 Td
+(- May 07 [redacted-ipv6] [redacted-host] monad-rpc[redacted-ipv6]: ) Tj
+0 -12 Td
+({"timestamp":"2026-05-07T12:43:05.621498Z","level":"ERROR","fields":{"message":"Error ) Tj
+0 -12 Td
+(traversing db while populating triedb cache receipts","block_key":"Proposed\(ProposedBl...) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Research Notes) Tj
+0 -12 Td
+(--------------) Tj
+0 -12 Td
+(- This report is generated from local system telemetry and Monad service logs on the mini PC.) Tj
+0 -12 Td
+(- Values are snapshots, not lab-grade benchmarks. Trends become more useful after multiple ) Tj
+0 -12 Td
+(four-hour samples.) Tj
+0 -12 Td
+(- The report intentionally avoids private identity material, validator keys, wallet-like ) Tj
+0 -12 Td
+(values, raw peer lists, public IPs, and command lines containing sensitive arguments.) Tj
+0 -12 Td
+(- Intended use: public community reporting about running a Monad node on smaller hardware while) Tj
+0 -12 Td
+( retaining useful operational data for technical readers.) Tj
+0 -12 Td
+() Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000195 00000 n 
+0000003415 00000 n 
+0000003541 00000 n 
+0000007827 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+7953
+%%EOF

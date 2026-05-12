@@ -1,0 +1,948 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R] /Count 8 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Length 3376 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+(Monad Mini-PC Small Pruned Node Setup Guide) Tj
+0 -12 Td
+(===========================================) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Purpose) Tj
+0 -12 Td
+(-------) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(This guide explains how to set up a small pruned Monad node similar to the) Tj
+0 -12 Td
+(mini-PC used for these public reports. It is written for beginners, but it) Tj
+0 -12 Td
+(keeps enough technical detail to be useful for operators and researchers.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(This build is not intended to supply large public infrastructure. It is a) Tj
+0 -12 Td
+(small-scale design for one operator or a small trusted group of roughly 2-3) Tj
+0 -12 Td
+(people. It is not a full-history archive node and should not be described as) Tj
+0 -12 Td
+(one. The goal is not to replace professional RPC providers, archive providers,) Tj
+0 -12 Td
+(or high-capacity validator infrastructure. The goal is to show that many) Tj
+0 -12 Td
+(well-run local nodes can strengthen the network by handling their own traffic) Tj
+0 -12 Td
+(and reducing some dependence on larger shared services.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Why run a small pruned node?) Tj
+0 -12 Td
+(----------------------------) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(1. Privacy and security) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Sending transactions through your own node reduces the amount of transaction) Tj
+0 -12 Td
+(   and usage data you expose to third-party RPC providers. You still interact) Tj
+0 -12 Td
+(   with the public blockchain, but your local workflow does not need to depend) Tj
+0 -12 Td
+(   on somebody else's public RPC endpoint for every request.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(2. Low local latency) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   A local node can give very fast access to chain state and WebSocket data for) Tj
+0 -12 Td
+(   bots, dashboards, or trading tools running on the same network. For) Tj
+0 -12 Td
+(   high-volume trading or monitoring, local RPC and WebSocket access can remove) Tj
+0 -12 Td
+(   the delay and rate limits that often come from public endpoints.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(3. Network support) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   This kind of node follows the current chain, executes recent state, serves) Tj
+0 -12 Td
+(   local RPC requests, and participates in node networking. It is not the same) Tj
+0 -12 Td
+(   thing as being an active validator unless the node identity is accepted into) Tj
+0 -12 Td
+(   the validator set, and it does not store full historical archive data. It can) Tj
+0 -12 Td
+(   still reduce load on larger shared RPC and validator-adjacent infrastructure.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(4. Practical decentralization) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   One mini-PC cannot serve the world. Many small nodes, each tuned for a) Tj
+0 -12 Td
+(   household, small team, or local application stack, make the network more) Tj
+0 -12 Td
+(   resilient. This is especially useful when those nodes are distributed across) Tj
+0 -12 Td
+(   different homes, networks, cities, and operators.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Important limits) Tj
+0 -12 Td
+(----------------) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(- This setup is intended for recent chain data, not full-history archival use.) Tj
+0 -12 Td
+(- In this experiment, historical) Tj
+0 -12 Td
+(  data older than roughly 20 days should be backfilled from another source.) Tj
+0 -12 Td
+(- This guide assumes bare-metal Linux, not a cloud VM.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 2926 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+(- This style of node is meant for local or small-group use, not public RPC) Tj
+0 -12 Td
+(  hosting at scale.) Tj
+0 -12 Td
+(- Do not publish keys, keystore passwords, wallet addresses, public IPs,) Tj
+0 -12 Td
+(  peer lists, raw systemd command lines, or unredacted logs.) Tj
+0 -12 Td
+(- Always check the official Monad documentation before installing or upgrading.) Tj
+0 -12 Td
+(  Node commands, package versions, network names, and recommended settings can) Tj
+0 -12 Td
+(  change.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Reference machine) Tj
+0 -12 Td
+(-----------------) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(The public report machine is an underspecced mini-PC compared with Monad's) Tj
+0 -12 Td
+(official recommendation, but it has been usable for recent-state local RPC with) Tj
+0 -12 Td
+(careful tuning and realistic expectations.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Observed system profile:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(- CPU: AMD Ryzen 7 8745H with Radeon 780M Graphics) Tj
+0 -12 Td
+(- Cores used by Linux after SMT/HT disablement: 8 physical CPU threads online) Tj
+0 -12 Td
+(- Memory: about 44 GiB RAM) Tj
+0 -12 Td
+(- Swap: about 46 GiB configured) Tj
+0 -12 Td
+(- OS/storage disk: about 1 TB NVMe) Tj
+0 -12 Td
+(- TrieDB disk: about 2 TB NVMe) Tj
+0 -12 Td
+(- Operating style: bare-metal Ubuntu/Linux with systemd services) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Official Monad hardware guidance is higher than this. At the time this guide) Tj
+0 -12 Td
+(was written, Monad's node-ops documentation listed 32 GB+ RAM, fast NVMe) Tj
+0 -12 Td
+(storage, bare metal, and stronger CPU/network recommendations. Treat this guide) Tj
+0 -12 Td
+(as a community experiment for small local use, not as a replacement for the) Tj
+0 -12 Td
+(official requirements.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(What the node runs) Tj
+0 -12 Td
+(------------------) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(A typical small pruned Monad node uses these services:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(- monad-bft: consensus client) Tj
+0 -12 Td
+(- monad-execution: execution and state) Tj
+0 -12 Td
+(- monad-rpc: HTTP and optional WebSocket RPC) Tj
+0 -12 Td
+(- monad-mpt: one-time TrieDB initialization) Tj
+0 -12 Td
+(- monad-cruft: cleanup of old artifacts) Tj
+0 -12 Td
+(- otelcol or another OTEL collector: metrics/telemetry collection) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Common ports:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(- 8000: Monad node networking) Tj
+0 -12 Td
+(- 8001: authenticated UDP, if enabled by the current Monad network config) Tj
+0 -12 Td
+(- 8080: local HTTP RPC) Tj
+0 -12 Td
+(- 8081: WebSocket RPC, if enabled) Tj
+0 -12 Td
+(- 4317: OTEL collector, preferably bound locally unless intentionally exposed) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Beginner setup walkthrough) Tj
+0 -12 Td
+(--------------------------) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(These steps are intentionally simple. They are a map of the process, not a) Tj
+0 -12 Td
+(guarantee that every command will stay current forever.) Tj
+0 -12 Td
+() Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 2433 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+(1. Read the official docs first) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Start with:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   - https://docs.monad.xyz/node-ops) Tj
+0 -12 Td
+(   - https://docs.monad.xyz/node-ops/hardware-requirements) Tj
+0 -12 Td
+(   - https://docs.monad.xyz/node-ops/full-node-installation) Tj
+0 -12 Td
+(   - https://docs.monad.xyz/node-ops/events-and-websockets) Tj
+0 -12 Td
+(   - https://docs.monad.xyz/node-ops/archive-data) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   If a command in this guide conflicts with the official docs, use the) Tj
+0 -12 Td
+(   official docs.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(2. Prepare the machine) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Use a bare-metal machine with Ubuntu 24.04+ or the currently recommended) Tj
+0 -12 Td
+(   Linux version. Update the system, then reboot if a kernel update was) Tj
+0 -12 Td
+(   installed.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Example:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(       sudo apt update) Tj
+0 -12 Td
+(       sudo apt upgrade -y) Tj
+0 -12 Td
+(       sudo reboot) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Install basic tools:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(       sudo apt install -y curl nvme-cli aria2 jq ufw) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(3. Disable SMT/HyperThreading) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Monad's official docs recommend disabling SMT/HT for more predictable node) Tj
+0 -12 Td
+(   performance. On most mini-PCs this is done in BIOS/UEFI. After rebooting,) Tj
+0 -12 Td
+(   check:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(       lscpu) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   The goal is one thread per core. On the reference machine, Linux reports) Tj
+0 -12 Td
+(   `Thread\(s\) per core: 1`.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(4. Choose the TrieDB disk carefully) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Monad uses `/dev/triedb` for the execution state database. This should be a) Tj
+0 -12 Td
+(   dedicated NVMe disk or partition. Formatting the wrong disk can destroy your) Tj
+0 -12 Td
+(   operating system.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Inspect disks first:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(       lsblk -o NAME,SIZE,TYPE,MOUNTPOINT,MODEL) Tj
+0 -12 Td
+(       nvme list) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Find the disk that is intended only for TrieDB. Do not use the disk that has) Tj
+0 -12 Td
+(   `/`, `/boot`, or your home directory mounted.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(5. Install the Monad package) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Follow the current official Monad package instructions. The official docs) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 2785 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+(   show how to add the Category Labs package repository and install the Monad) Tj
+0 -12 Td
+(   package for the current network.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Do not copy old install commands from social media without checking the) Tj
+0 -12 Td
+(   official docs first.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(6. Create the service user) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Monad services normally run under a dedicated `monad` user:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(       sudo useradd -m -s /bin/bash monad) Tj
+0 -12 Td
+(       sudo mkdir -p /home/monad/monad-bft/config) Tj
+0 -12 Td
+(       sudo mkdir -p /home/monad/monad-bft/ledger) Tj
+0 -12 Td
+(       sudo mkdir -p /home/monad/monad-bft/config/forkpoint) Tj
+0 -12 Td
+(       sudo mkdir -p /home/monad/monad-bft/config/validators) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(7. Create and verify `/dev/triedb`) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Follow the official Monad installation page for partitioning the TrieDB disk,) Tj
+0 -12 Td
+(   creating the udev rule, checking 512-byte LBA format, and running the) Tj
+0 -12 Td
+(   one-time `monad-mpt` initialization service.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Do not rush this step. This is the step where selecting the wrong disk can) Tj
+0 -12 Td
+(   wipe the OS.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(8. Configure the firewall) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   For a small local node:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(       sudo ufw allow ssh) Tj
+0 -12 Td
+(       sudo ufw allow 8000) Tj
+0 -12 Td
+(       sudo ufw allow 8001) Tj
+0 -12 Td
+(       sudo ufw enable) Tj
+0 -12 Td
+(       sudo ufw status) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Keep RPC ports private unless you intentionally know what you are exposing.) Tj
+0 -12 Td
+(   For a home/small-team node, prefer local network access, VPN access, or) Tj
+0 -12 Td
+(   firewall allowlists over public RPC exposure.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(9. Install or configure OTEL metrics) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Monad expects an OTEL endpoint in normal service configuration. The official) Tj
+0 -12 Td
+(   docs describe installing `otelcol`. On a small node, binding the collector) Tj
+0 -12 Td
+(   locally is usually safer unless you have a specific monitoring stack.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(10. Download network configuration) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   The official Monad node docs provide current `.env` and `node.toml` download) Tj
+0 -12 Td
+(   commands for mainnet or testnet.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Use the non-validator node configuration unless the machine is intentionally) Tj
+0 -12 Td
+(   being set up as a validator.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(11. Create the keystore password and keys) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   The keystore password protects the node's encrypted identity keys. Treat it) Tj
+0 -12 Td
+(   like a real secret.) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 2850 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+() Tj
+0 -12 Td
+(   Important:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   - Never post `/home/monad/.env`.) Tj
+0 -12 Td
+(   - Never post keystore backups.) Tj
+0 -12 Td
+(   - Never post raw service command lines that include passwords.) Tj
+0 -12 Td
+(   - Store backups in a password manager or offline secure storage.) Tj
+0 -12 Td
+(   - Restrict permissions on key files and `.env`.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   The official docs show how to generate SECP and BLS keystores with) Tj
+0 -12 Td
+(   `monad-keystore`.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(12. Edit `node.toml`) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   For this style of local node:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   - Use a unique but non-sensitive node name.) Tj
+0 -12 Td
+(   - If you are not operating as a validator, the beneficiary can be the burn) Tj
+0 -12 Td
+(     address described in the official docs.) Tj
+0 -12 Td
+(   - Ensure `[fullnode_raptorcast] enable_client = true`.) Tj
+0 -12 Td
+(   - Ensure `[statesync] expand_to_group = true`.) Tj
+0 -12 Td
+(   - Leave `[blocksync_override]` peers empty unless you have a specific reason.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(13. Sign the node name record) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   The node signs a name record so peers can discover it. The official docs show) Tj
+0 -12 Td
+(   the `monad-sign-name-record` command. After generating the record, update) Tj
+0 -12 Td
+(   the `peer_discovery` section in `node.toml`.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Privacy warning: do not post this section publicly without redacting network) Tj
+0 -12 Td
+(   address data and signatures.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(14. Enable and start services) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(       sudo chown -R monad:monad /home/monad/) Tj
+0 -12 Td
+(       sudo systemctl enable monad-bft monad-execution monad-rpc) Tj
+0 -12 Td
+(       sudo systemctl start monad-bft monad-execution monad-rpc) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Depending on the current network state, you may need to follow the official) Tj
+0 -12 Td
+(   hard-reset/snapshot instructions before the services fully catch up.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(15. Optional: enable WebSockets for local bots) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   WebSocket RPC is useful for bots and real-time dashboards. Monad's docs say) Tj
+0 -12 Td
+(   WebSockets depend on execution events, which use a shared-memory event ring.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   In plain language:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   - Execution must write events.) Tj
+0 -12 Td
+(   - RPC must read those events.) Tj
+0 -12 Td
+(   - The hugepage/event-rings directory must exist.) Tj
+0 -12 Td
+(   - RPC needs `--ws-enabled`.) Tj
+0 -12 Td
+(   - The default WS port is 8081.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   For small trading bots, keep WS local or on a trusted LAN/VPN. Do not expose) Tj
+0 -12 Td
+(   a high-limit WS endpoint to the open internet.) Tj
+0 -12 Td
+() Tj
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 2961 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+(16. Check node health) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Useful checks:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(       systemctl is-active monad-bft monad-execution monad-rpc) Tj
+0 -12 Td
+(       systemctl show monad-bft monad-execution monad-rpc -p ActiveState -p SubState -p ) Tj
+0 -12 Td
+(NRestarts) Tj
+0 -12 Td
+(       ss -ltn) Tj
+0 -12 Td
+(       free -h) Tj
+0 -12 Td
+(       sensors) Tj
+0 -12 Td
+(       journalctl -u monad-execution --since "2 minutes ago" --no-pager) Tj
+0 -12 Td
+(       journalctl -u monad-bft --since "2 minutes ago" --no-pager) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(   Public reports should redact keys, IPs, wallet-like values, long hex) Tj
+0 -12 Td
+(   strings, peer lists, hostnames, usernames, and raw command lines.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Pruned node and historical data) Tj
+0 -12 Td
+(-------------------------------) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Pruning means the machine keeps recent working state and enough local data for) Tj
+0 -12 Td
+(normal small-node use. It does not keep full archived history.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(For this public experiment, assume the node is optimized around recent data and) Tj
+0 -12 Td
+(that historical data older than roughly 20 days may need another source.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Why this matters:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(- Recent transaction sending and live monitoring can work from the local node.) Tj
+0 -12 Td
+(- Older blocks, receipts, logs, or traces may not be available locally.) Tj
+0 -12 Td
+(- Full archived history requires much more storage and a different design.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(If you need historical data beyond local retention, use one of these approaches.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Option 1: Query another data provider) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Use a reputable external source for older data, such as Coinbase, an exchange,) Tj
+0 -12 Td
+(an indexer, an explorer, a data platform, or another provider of your choosing,) Tj
+0 -12 Td
+(as long as that source supports the Monad data you need.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Simple workflow:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(1. Decide what you need: blocks, receipts, logs, fills, balances, or tax/export) Tj
+0 -12 Td
+(   records.) Tj
+0 -12 Td
+(2. Export or query the data from the provider.) Tj
+0 -12 Td
+(3. Save the raw export separately from your trading logic.) Tj
+0 -12 Td
+(4. Normalize the fields into your own database or CSV files.) Tj
+0 -12 Td
+(5. Cross-check important records against your local node when the data is still) Tj
+0 -12 Td
+(   inside local retention.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(This is the easiest path for most non-infrastructure users.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Option 2: Configure Monad RPC to use archive backup data) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Monad's archive documentation describes how RPC can look beyond local pruned) Tj
+0 -12 Td
+(data by using an Archive Server or object storage backup.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(The official data waterfall is:) Tj
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 2929 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+() Tj
+0 -12 Td
+(1. In-memory chain state buffer) Tj
+0 -12 Td
+(2. MonadDB / TrieDB) Tj
+0 -12 Td
+(3. Archive Server, if configured) Tj
+0 -12 Td
+(4. Object storage, if configured) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(For a small node, this usually means pointing RPC to an external archive source) Tj
+0 -12 Td
+(rather than hosting all archive infrastructure on the mini-PC.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Option 3: Run your own archive stack) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(This is not recommended for a mini-PC. Monad's archive docs describe a much) Tj
+0 -12 Td
+(larger footprint: MongoDB/archive services, archive writer nodes, substantial) Tj
+0 -12 Td
+(NVMe storage, and stronger networking. Use this only if you actually want to) Tj
+0 -12 Td
+(operate archive infrastructure.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Security checklist for public reporting) Tj
+0 -12 Td
+(---------------------------------------) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Before posting logs, screenshots, reports, or setup notes:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(- Remove hostnames and usernames.) Tj
+0 -12 Td
+(- Remove public and private IP addresses unless intentionally public.) Tj
+0 -12 Td
+(- Remove wallet addresses unless intentionally shared.) Tj
+0 -12 Td
+(- Remove keystore passwords and `.env` contents.) Tj
+0 -12 Td
+(- Remove BLS/SECP private key material and backups.) Tj
+0 -12 Td
+(- Remove full peer lists.) Tj
+0 -12 Td
+(- Remove service command lines if they include secrets.) Tj
+0 -12 Td
+(- Redact long hex strings unless they are clearly harmless public block IDs.) Tj
+0 -12 Td
+(- Avoid screenshots that show terminals with secrets, wallets, private tabs, or) Tj
+0 -12 Td
+(  local network details.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(What success looks like) Tj
+0 -12 Td
+(-----------------------) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(A healthy small node should show:) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(- `monad-bft`, `monad-execution`, and `monad-rpc` active.) Tj
+0 -12 Td
+(- Node networking listening on the expected port.) Tj
+0 -12 Td
+(- RPC responding locally.) Tj
+0 -12 Td
+(- WebSocket responding locally if enabled.) Tj
+0 -12 Td
+(- Execution logs advancing through blocks.) Tj
+0 -12 Td
+(- BFT logs committing blocks.) Tj
+0 -12 Td
+(- Temperatures stable enough that the machine does not throttle or crash.) Tj
+0 -12 Td
+(- No repeating critical errors in recent logs.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(For a mini-PC, temperature and memory pressure matter. Track them over time.) Tj
+0 -12 Td
+(Short spikes are normal. Sustained high temperature, constant swap growth, disk) Tj
+0 -12 Td
+(errors, or repeated service restarts should be investigated.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Sources checked for this guide) Tj
+0 -12 Td
+(------------------------------) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(- Monad Node Operations:) Tj
+0 -12 Td
+(  https://docs.monad.xyz/node-ops) Tj
+0 -12 Td
+(- Monad Hardware Requirements:) Tj
+0 -12 Td
+(  https://docs.monad.xyz/node-ops/hardware-requirements) Tj
+ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 16 0 R >>
+endobj
+18 0 obj
+<< /Length 659 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+(- Monad Full Node Installation:) Tj
+0 -12 Td
+(  https://docs.monad.xyz/node-ops/full-node-installation) Tj
+0 -12 Td
+(- Monad Execution Events and WebSocket Setup:) Tj
+0 -12 Td
+(  https://docs.monad.xyz/node-ops/events-and-websockets) Tj
+0 -12 Td
+(- Monad Archive Data Setup:) Tj
+0 -12 Td
+(  https://docs.monad.xyz/node-ops/archive-data) Tj
+0 -12 Td
+(- Monad Data Waterfall:) Tj
+0 -12 Td
+(  https://docs.monad.xyz/node-ops/archive-data/data-waterfall) Tj
+0 -12 Td
+(- Monad RPC Archive Configuration:) Tj
+0 -12 Td
+(  https://docs.monad.xyz/node-ops/archive-data/configuring-rpc) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Last updated: 2026-05-12) Tj
+ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 18 0 R >>
+endobj
+xref
+0 20
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000168 00000 n 
+0000000236 00000 n 
+0000003664 00000 n 
+0000003790 00000 n 
+0000006768 00000 n 
+0000006894 00000 n 
+0000009379 00000 n 
+0000009505 00000 n 
+0000012343 00000 n 
+0000012471 00000 n 
+0000015374 00000 n 
+0000015502 00000 n 
+0000018516 00000 n 
+0000018644 00000 n 
+0000021626 00000 n 
+0000021754 00000 n 
+0000022465 00000 n 
+trailer
+<< /Size 20 /Root 1 0 R >>
+startxref
+22593
+%%EOF
