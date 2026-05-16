@@ -1,0 +1,547 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Length 3160 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+(Monad Mini PC Node System Report) Tj
+0 -12 Td
+(==================================) Tj
+0 -12 Td
+(Generated: 2026-05-16 06:10:02 MDT) Tj
+0 -12 Td
+(Privacy posture: public report. Hostnames, usernames, IP addresses, keys, signatures, wallet-) Tj
+0 -12 Td
+(like hex strings, and token-like values are redacted or omitted.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Executive Summary) Tj
+0 -12 Td
+(-----------------) Tj
+0 -12 Td
+(Monad services: monad-bft=active, monad-execution=active, monad-rpc=active.) Tj
+0 -12 Td
+(Estimated Monad service CPU over the prior interval: approximately 622.1% of one CPU core.) Tj
+0 -12 Td
+(Thermals: max 88.2 C, average 42.5 C.) Tj
+0 -12 Td
+(PDF resource-window screenshot: not included \(no resource monitor window found\).) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(System Specs) Tj
+0 -12 Td
+(------------) Tj
+0 -12 Td
+(CPU: AMD Ryzen 7 8745H w/ Radeon 780M Graphics) Tj
+0 -12 Td
+(CPU count reported by kernel: 16) Tj
+0 -12 Td
+(Online CPU range: 0-7) Tj
+0 -12 Td
+(RAM: 44Gi) Tj
+0 -12 Td
+(Root disk: 915G total, 199G used, 670G available, 23% used) Tj
+0 -12 Td
+(Kernel: 6.17.0-1020-oem) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Monad Node Runtime) Tj
+0 -12 Td
+(------------------) Tj
+0 -12 Td
+(Services:) Tj
+0 -12 Td
+(- monad-bft: active=active, state=running, main_pid=1543, restarts=0, memory=1465.8 MB, ) Tj
+0 -12 Td
+(cpu_since_start=9045.8 sec) Tj
+0 -12 Td
+(- monad-execution: active=active, state=running, main_pid=1544, restarts=0, memory=24226.7 MB, ) Tj
+0 -12 Td
+(cpu_since_start=1238455.9 sec) Tj
+0 -12 Td
+(- monad-rpc: active=active, state=running, main_pid=1545, restarts=0, memory=4087.5 MB, ) Tj
+0 -12 Td
+(cpu_since_start=34957.4 sec) Tj
+0 -12 Td
+(Processes: no visible Monad process rows were returned by ps.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Temperature And Fluctuation Analysis) Tj
+0 -12 Td
+(------------------------------------) Tj
+0 -12 Td
+(- Current thermal snapshot: average 42.5 C, maximum 88.2 C across 11 reported sensors.) Tj
+0 -12 Td
+(- Four-hour comparison: 1.6 C decrease in max temperature from the prior report.) Tj
+0 -12 Td
+(- Thermal fluctuation note: change stayed within a small operating band for this sample window.) Tj
+0 -12 Td
+(- 24-hour observed max-temperature range: 88.2 C to 91.2 C.) Tj
+0 -12 Td
+(Top reported sensor readings:) Tj
+0 -12 Td
+(- k10temp-pci-00c3 / Tctl: 88.2 C) Tj
+0 -12 Td
+(- amdgpu-pci-c500 / edge: 59.0 C) Tj
+0 -12 Td
+(- nvme-pci-0400 / temp1: 57.0 C) Tj
+0 -12 Td
+(- spd5118-i2c-0-50 / temp1: 42.0 C) Tj
+0 -12 Td
+(- spd5118-i2c-0-51 / temp1: 36.5 C) Tj
+0 -12 Td
+(- nvme-pci-0400 / Sensor 2: 34.9 C) Tj
+0 -12 Td
+(- nvme-pci-0400 / Composite: 33.9 C) Tj
+0 -12 Td
+(- nvme-pci-0400 / Sensor 1: 33.9 C) Tj
+0 -12 Td
+(- nvme-pci-0100 / Composite: 30.9 C) Tj
+0 -12 Td
+(- nvme-pci-0100 / Sensor 1: 30.9 C) Tj
+0 -12 Td
+(- acpitz-acpi-0 / temp1: 20.0 C) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(System And Node Events Cross-Check) Tj
+0 -12 Td
+(----------------------------------) Tj
+0 -12 Td
+(Recent sanitized events from the last four hours, classified for public context:) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 4836 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+(  Sanitized detail: May 16 05:09:56 [redacted-host] monad[1544]: 2026-05-16 11:09:56.228349515 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:09:56 [redacted-host] monad[1544]: 2026-05-16 11:09:56.228775694 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:09:56 [redacted-host] monad[1544]: 2026-05-16 11:09:56.228954279 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:09:56 [redacted-host] monad[1544]: 2026-05-16 11:09:56.229341105 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:24:46 [redacted-host] monad[1544]: 2026-05-16 11:24:46.309779206 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:24:46 [redacted-host] monad[1544]: 2026-05-16 11:24:46.310012960 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:24:46 [redacted-host] monad[1544]: 2026-05-16 11:24:46.310302483 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:24:46 [redacted-host] monad[1544]: 2026-05-16 11:24:46.310620129 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:24:46 [redacted-host] monad[1544]: 2026-05-16 11:24:46.310974013 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:39:36 [redacted-host] monad[1544]: 2026-05-16 11:39:36.401974955 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:39:36 [redacted-host] monad[1544]: 2026-05-16 11:39:36.402078684 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:39:36 [redacted-host] monad[1544]: 2026-05-16 11:39:36.402230719 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 4803 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:39:36 [redacted-host] monad[1544]: 2026-05-16 11:39:36.402339142 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:39:36 [redacted-host] monad[1544]: 2026-05-16 11:39:36.402468275 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:54:26 [redacted-host] monad[1544]: 2026-05-16 11:54:26.494545364 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:54:26 [redacted-host] monad[1544]: 2026-05-16 11:54:26.494734526 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:54:26 [redacted-host] monad[1544]: 2026-05-16 11:54:26.495010994 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:54:26 [redacted-host] monad[1544]: 2026-05-16 11:54:26.495273016 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 05:54:26 [redacted-host] monad[1544]: 2026-05-16 11:54:26.495565114 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 06:09:16 [redacted-host] monad[1544]: 2026-05-16 12:09:16.581663604 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 06:09:16 [redacted-host] monad[1544]: 2026-05-16 12:09:16.581792514 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 06:09:16 [redacted-host] monad[1544]: 2026-05-16 12:09:16.581924632 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+0 -12 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 06:09:16 [redacted-host] monad[1544]: 2026-05-16 12:09:16.582051339 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+(- [Node-impacting] monad-execution: service lifecycle or resource events that can affect node ) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 4466 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+(availability.) Tj
+0 -12 Td
+(  Sanitized detail: May 16 06:09:16 [redacted-host] monad[1544]: 2026-05-16 12:09:16.582185100 ) Tj
+0 -12 Td
+([2212] statesync_server.cpp:165 LOG_INFO        Request failed: deletion not found for ) Tj
+0 -12 Td
+(block=72991305 \(old_target=72991304, target=74329019\)) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Security Change Log) Tj
+0 -12 Td
+(-------------------) Tj
+0 -12 Td
+(Recent operator security changes, sanitized for public sharing:) Tj
+0 -12 Td
+(- 2026-05-07: Restored Monad runtime settings with systemd drop-ins instead of editing vendor ) Tj
+0 -12 Td
+(unit files.) Tj
+0 -12 Td
+(  Why: Keeps the node configuration easier to audit and preserve across package updates while ) Tj
+0 -12 Td
+(restoring the known-good event-ring, RPC websocket, and CPU-placement behavior from the earlier) Tj
+0 -12 Td
+( install.) Tj
+0 -12 Td
+(  Privacy note: No command lines, passwords, keys, peer addresses, node identities, wallet-like) Tj
+0 -12 Td
+( values, or public IP addresses are recorded here.) Tj
+0 -12 Td
+(- 2026-05-07: Restricted Monad secret-bearing files to owner-only read/write permissions.) Tj
+0 -12 Td
+(  Why: The local keystore environment file and node identity key files were more broadly ) Tj
+0 -12 Td
+(readable than necessary. Owner-only permissions reduce local accidental disclosure risk without) Tj
+0 -12 Td
+( changing node behavior.) Tj
+0 -12 Td
+(  Privacy note: File paths are summarized by purpose; key contents and unlock values are never ) Tj
+0 -12 Td
+(included.) Tj
+0 -12 Td
+(- 2026-05-07: Confirmed normal local users cannot read the Monad BFT process command line or ) Tj
+0 -12 Td
+(environment through procfs.) Tj
+0 -12 Td
+(  Why: The BFT binary currently accepts its keystore unlock value through a command-line ) Tj
+0 -12 Td
+(option, so process-argument visibility matters. Existing procfs hiding reduces exposure to non-) Tj
+0 -12 Td
+(privileged local users.) Tj
+0 -12 Td
+(  Privacy note: The actual process command line and keystore unlock value are intentionally ) Tj
+0 -12 Td
+(omitted.) Tj
+0 -12 Td
+(- 2026-05-07: Documented the remaining upstream security limitation for Monad BFT keystore ) Tj
+0 -12 Td
+(unlock handling.) Tj
+0 -12 Td
+(  Why: A cleaner design would let operators pass the keystore unlock value through a protected ) Tj
+0 -12 Td
+(file, stdin, systemd credential, or similar non-argv mechanism. The current local binary help ) Tj
+0 -12 Td
+(only exposes a command-line unlock option.) Tj
+0 -12 Td
+(  Privacy note: This notes the design limitation only; no secret [redacted] is recorded.) Tj
+0 -12 Td
+(- 2026-05-07: Kept public report generation sanitized and avoided raw systemctl status or full ) Tj
+0 -12 Td
+(process command-line capture.) Tj
+0 -12 Td
+(  Why: Full status and process listings can expose sensitive command-line arguments. Reports ) Tj
+0 -12 Td
+(use narrower systemd fields, sanitized journal excerpts, and explicit redaction before writing ) Tj
+0 -12 Td
+(TXT/PDF outputs.) Tj
+0 -12 Td
+(  Privacy note: Reports redact hostnames, usernames, IP addresses, keys, signatures, wallet-) Tj
+0 -12 Td
+(like hex strings, token-like values, and sensitive argument values.) Tj
+0 -12 Td
+(- 2026-05-10: Added a local OpenTelemetry Collector for the Monad metrics endpoint.) Tj
+0 -12 Td
+(  Why: Monad BFT requires a telemetry endpoint argument. The previous configuration pointed at ) Tj
+0 -12 Td
+(a local endpoint with no listener, causing repeated connection-refused errors. A localhost-only) Tj
+0 -12 Td
+( collector now provides the required endpoint without exporting private telemetry externally.) Tj
+0 -12 Td
+(  Privacy note: The report records only the operational change and reason. No raw telemetry ) Tj
+0 -12 Td
+(payloads, peer identities, public IP addresses, keys, command lines, or unlock values are ) Tj
+0 -12 Td
+(included.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Research Notes) Tj
+0 -12 Td
+(--------------) Tj
+0 -12 Td
+(- This report is generated from local system telemetry and Monad service logs on the mini PC.) Tj
+0 -12 Td
+(- Values are snapshots, not lab-grade benchmarks. Trends become more useful after multiple ) Tj
+0 -12 Td
+(four-hour samples.) Tj
+0 -12 Td
+(- The report intentionally avoids private identity material, validator keys, wallet-like ) Tj
+0 -12 Td
+(values, raw peer lists, public IPs, and command lines containing sensitive arguments.) Tj
+0 -12 Td
+(- Intended use: public community reporting about running a Monad node on smaller hardware while) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 102 >>
+stream
+BT
+/F1 9 Tf
+54 738 Td
+( retaining useful operational data for technical readers.) Tj
+0 -12 Td
+() Tj
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 12 0 R >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000147 00000 n 
+0000000215 00000 n 
+0000003427 00000 n 
+0000003553 00000 n 
+0000008441 00000 n 
+0000008567 00000 n 
+0000013422 00000 n 
+0000013548 00000 n 
+0000018067 00000 n 
+0000018195 00000 n 
+0000018349 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+18477
+%%EOF
