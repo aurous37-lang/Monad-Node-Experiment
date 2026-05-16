@@ -26,6 +26,28 @@ telemetry and Monad service logs. Private identity material, keys, wallet-like
 values, public IPs, peer lists, hostnames, usernames, and sensitive command
 arguments are intentionally excluded or redacted.
 
+## May 16 Version Check
+
+After Keone Hon posted on X that Monad `v0.14.3` requires Authenticated UDP for
+RaptorCast, the local install was checked to decide whether a version change was
+needed. Authenticated UDP is relevant to this experiment because reducing
+consensus-message verification overhead is useful on underspecced pruned-node
+hardware.
+
+The installed package was `monad 0.14.4~rc.1` from the Category Labs package
+repository, with `monad-node` and `monad-rpc` reporting `v0.14.4-rc.1`.
+Although `v0.14.3` was the latest confirmed stable release at the time of the
+check, the installed release-candidate build was already newer. A local
+non-sensitive binary and log check confirmed that the running BFT service
+included the Authenticated UDP/RaptorCast code path and was using the
+wire-authenticated transport path.
+
+Decision: do not downgrade solely to reach `v0.14.3`. This node already has the
+Authenticated UDP generation of networking changes, so the operator kept the
+current install while continuing to watch for official Monad/Category Labs
+operator guidance on whether to prefer the stable `v0.14.3` release over the
+`v0.14.4` release candidate.
+
 Report event sections classify scary-looking log lines so readers can
 distinguish node-impacting issues from report collection timeouts, expected
 pruned-node limitations, WebSocket/client disconnect noise, and historical
