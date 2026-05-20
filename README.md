@@ -18,6 +18,8 @@ dependence on shared third-party endpoints.
 - PDF system reports are in [`reports/pdf`](reports/pdf).
 - All public TXT report files are bundled into
   [`reports/text-archive/public-report-text-files.zip`](reports/text-archive/public-report-text-files.zip).
+- Latest published snapshot:
+  [`monad-mini-pc-system-report-2026-05-20_0738.pdf`](reports/pdf/monad-mini-pc-system-report-2026-05-20_0738.pdf).
 
 ## Notes
 
@@ -25,6 +27,41 @@ The reports are intended for public sharing and are generated from local system
 telemetry and Monad service logs. Private identity material, keys, wallet-like
 values, public IPs, peer lists, hostnames, usernames, and sensitive command
 arguments are intentionally excluded or redacted.
+
+## May 20 Health Check
+
+The node recovered cleanly after a local power/network interruption earlier in
+the week. During the outage recovery, the Monad services started but BFT had no
+usable peers until the router was power-cycled and BFT was restarted. After
+that, the node resumed normal peer activity, local RPC came back on both HTTP
+and WebSocket ports, and block execution advanced again.
+
+The May 20 public snapshot shows the node in a healthy operating state:
+
+- `monad-bft`, `monad-execution`, `monad-rpc`, and the local OTEL collector were
+  active.
+- Expected listeners were present on node networking, HTTP RPC, WebSocket RPC,
+  and the localhost-only OTEL endpoint.
+- Local RPC advanced from block `75,838,850` to `75,838,871` during a short
+  check window.
+- Recent BFT logs showed committed blocks, successful votes, and vote sending.
+- Recent execution logs showed active block execution around block `75,838,849`
+  to `75,838,852`.
+
+Thermals remained in the expected sustained-load range for this mini PC. The
+manual check saw CPU `Tctl` around `85.0 C` to `86.8 C`, and the generated
+public report recorded a maximum sensor reading of `86.4 C`. That is hot, but
+reasonable for this underspecced small-node experiment under continuous Monad
+load. The operator is watching for rapid climbs toward the high 90s, throttling,
+service instability, or sudden performance drops rather than treating every
+mid-80s reading as a failure.
+
+Maintenance note: the OS currently reports that a reboot is required, and apt
+shows a stable `monad 0.14.4` package available over the installed
+`0.14.4~rc.1` package, along with Docker, browser, and Tailscale updates. Treat
+that as planned maintenance: update and reboot only when node downtime is
+acceptable, then verify services, listeners, execution activity, and local RPC
+after startup.
 
 ## May 16 Version Check
 
