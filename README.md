@@ -28,6 +28,23 @@ telemetry and Monad service logs. Private identity material, keys, wallet-like
 values, public IPs, peer lists, hostnames, usernames, and sensitive command
 arguments are intentionally excluded or redacted.
 
+## June 2 Power-Loss Recovery
+
+An unexpected local power outage rebooted the mini PC on June 2, 2026. The PC
+itself came back cleanly, but the Monad node initially remained active without
+serving local RPC: node networking and the local OTEL endpoint were listening,
+while HTTP RPC and WebSocket RPC were still closed and `monad-rpc` was waiting
+for state sync.
+
+A controlled Monad service restart restored normal operation after a short
+state-sync window. Local RPC and WebSocket RPC reopened, `eth_blockNumber`
+returned block `78,726,044`, execution advanced through block `78,726,048`, and
+BFT logs again showed committed blocks and successful vote activity.
+
+The sanitized incident note is available here:
+
+- [June 2, 2026 power-loss recovery](reports/incidents/2026-06-02-power-loss-recovery.md)
+
 ## May 20 Health Check
 
 The node recovered cleanly after a local power/network interruption earlier in
