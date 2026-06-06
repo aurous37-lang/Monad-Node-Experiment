@@ -28,6 +28,28 @@ telemetry and Monad service logs. Private identity material, keys, wallet-like
 values, public IPs, peer lists, hostnames, usernames, and sensitive command
 arguments are intentionally excluded or redacted.
 
+## June 6 Statesync Recovery (Stale Forkpoint)
+
+Following the June 3 power loss, the node spent several days stuck in state sync.
+All four Monad services reported `active`, but HTTP RPC and WebSocket RPC stayed
+closed and execution did not advance. The cause was a stale consensus checkpoint:
+the node was holding a forkpoint and validator set from epoch `1578` while the
+network had advanced to epoch `1591`, so state sync was chasing a target that
+providers no longer retain and could never complete.
+
+The fix was to refresh the forkpoint and validator set together to the current
+epoch-`1591` pair from the official configuration bucket, reset the local state
+database for a clean sync base, restore the execution event-ring directory, and
+restart the service group. State sync then re-targeted to the live chain height
+and completed in roughly 42 minutes. Afterward all services were active, the
+expected listeners were present on node networking, HTTP RPC, WebSocket RPC, and
+the localhost-only OTEL endpoint, local RPC returned block `79,531,353`, and
+execution advanced normally with no certificate-verification errors.
+
+The sanitized incident note is available here:
+
+- [June 6, 2026 statesync recovery (stale forkpoint)](reports/incidents/2026-06-06-statesync-wedge-recovery.md)
+
 ## June 2 Power-Loss Recovery
 
 An unexpected local power outage rebooted the mini PC on June 2, 2026. The PC
